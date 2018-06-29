@@ -4,7 +4,7 @@
   "description": "Bricks components snippets, based on documentation",
   "icon": "images/bricks_128px.png",
   "version": "3.17.2",
-  "publisher": "fabio.walter",
+  "publisher": "fabiojwalter",
   "license": "See License section in README.md. All thanks to the original creator https://github.com/thekalinga",
   "homepage": "https://github.com/fabiojwalter/bootstrap4-vscode/blob/master/README.md",
   "repository": {
