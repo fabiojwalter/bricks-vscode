@@ -1,32 +1,28 @@
-Bootstrap 4 & Font awesome snippets for Visual studio code
+Bricks snippets for Visual studio code
 ===========================
 
-Visual studio code plugin containing Bootstrap 4, Font awesome 4 & Font Awesome 5 Free & Pro snippets. This plugin works in both in the stable & the insiders build
+Visual Studio Code snippet plugin containing Bricks Components, Font Awesome Icons, Material Icons, Material Design Icons Community
 
-![Plugin in action](help.gif)
+![Plugin in action](images/bricks-vscode.gif)
 
-Feel free to let me know what else you want added via the [issues](https://github.com/thekalinga/bootstrap4-vscode/issues)
-
-Suggestions, feedback and other comments welcome via [@thekalinga](https://twitter.com/thekalinga) on Twitter.
 
 ## Setup (in 2 easy steps)
 
 1. Install plugin
-  1. Press `F1`, paste `ext install bootstrap4-vscode` & then press `enter` (or)
-  2. Goto extensions by pressing `Ctrl-Shift-X` (Windows/Linux) or `Cmd-Shift-X` (Mac) & Search for `Bootstrap 4 & Font awesome`, click on install
+  1. Press `F1`, paste `ext install bricks-vscode` & then press `enter` (or)
+  2. Goto extensions by pressing `Ctrl-Shift-X` (Windows/Linux) or `Cmd-Shift-X` (Mac) & Search for `Bricks Components snippets`, click on install
 2. Reload your editor
-
-You are good to go
+3. **You are good to go...**
 
 ## Usage
 
-To use the bootstrap snippets, open a HTML file, and start typing `b4-`, followed by pressing `Ctrl+Space`. A list of bootstrap snippets will show up
+To use the bootstrap snippets, open a HTML file, and start typing `bx-`, followed by pressing `Ctrl+Space`. A list of bootstrap snippets will show up
 
-To use font awesome 4 snippets, open a HTML file, and start typing `fa4-`, the editor will show you all the snippets
+To use font awesome snippets, open a source file, and start typing `fa-`, the editor will show you all the snippets
 
-To use font awesome 5 free snippets, open a HTML file, and start typing `fa5-`, the editor will show you all the snippets
+To use Material Icons snippets, source file, and start typing `mi-`, the editor will show you all the snippets
 
-To use font awesome 5 pro snippets, open a HTML file, and start typing `fa5p-`, the editor will show you all the snippets
+To use Material Design Community Icons snippets, open source file, and start typing `mc-`, the editor will show you all the snippets
 
 The detailed list of supported actions are listed below under documentation section
 
@@ -39,7 +35,6 @@ The detailed list of supported actions are listed below under documentation sect
 5. Send me a pull request
 
 ## Changelog
-
 See [here](CHANGELOG.md)
 
 ## Documentation
@@ -47,9 +42,10 @@ See [here](CHANGELOG.md)
 
 ## License
 
-Bootstrap 4, Font Awesome 4, Font Awesome 5 Free & Pro - Visual studio code plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Bricks snippets for Visual studio code plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 
 ## Disclaimer:
+Special thanks to [Ashok Koyi](https://github.com/thekalinga)
 
-Readme template for this plugin was initially borrowed from [here](https://github.com/bodiam/intellij-bootstrap3) & [here](https://github.com/JasonMortonNZ/bs3-sublime-plugin)
+Readme template for this plugin was initially borrowed from [here](https://github.com/thekalinga/bootstrap4-vscode) & [here](https://github.com/bodiam/intellij-bootstrap3) & [here](https://github.com/JasonMortonNZ/bs3-sublime-plugin)
