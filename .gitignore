@@ -4,6 +4,7 @@ build/
 target/
 .project
 .classpath
+.vscodeignore
 /bootstrap.xml
 /font-awesome.xml
 /bootstrap-snippets.json

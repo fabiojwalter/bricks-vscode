@@ -13,7 +13,7 @@ class ReadmeGenerator {
 
     static void main(String[] args) {
         PathMatchingResourcePatternResolver resourceLoader = new PathMatchingResourcePatternResolver();
-        def snippetResources = asList(resourceLoader.getResources("/bootstrap/**/*.html"))
+        def snippetResources = asList(resourceLoader.getResources("/bricks/**/*.html"))
 
         printSnippets(snippetResources)
     }
@@ -65,9 +65,9 @@ class ReadmeGenerator {
             } else {
                 def snippetHelp = SnippetHelp.builder()
                         .trigger('\\$')
-                        .description('Bootstrap master template')
+                        .description('Bricks master template')
                         .build()
-                folderToSnippets.put('Bootstrap master template', asList(snippetHelp))
+                folderToSnippets.put('Bricks master template', asList(snippetHelp))
             }
         }
 
