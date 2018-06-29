@@ -1,3 +1,8 @@
+## FORKED: Renamed to bricks-vscode 3.17.2 (29 Jun 2018)
+  - Created new repository
+  - Version Updated for compatibility with Bricks version new version 3.17.2
+  - Special thanks for [thekalinga](https://github.com/thekalinga)
+
 ## Since 4.1.1 (29 Mar 2018):
 
   - Fixed documentation issue

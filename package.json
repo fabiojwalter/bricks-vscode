@@ -1,64 +1,28 @@
 {
-  "name": "bootstrap4-vscode",
-  "displayName": "Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets",
-  "description": "Bootstrap 4 snippets based on documentation + Font awesome 4 + Font Awesome 5 Free & Pro snippets",
-  "icon": "bootstrap_128px.png",
-  "version": "4.1.1",
-  "publisher": "thekalinga",
-  "license": "See License section in README.md",
-  "homepage": "https://github.com/thekalinga/bootstrap4-vscode/blob/master/README.md",
+  "name": "bricks-vscode",
+  "displayName": "Bricks Components, Font awesome Icons, Material Icons, Material design icons community",
+  "description": "Bricks components snippets, based on documentation",
+  "icon": "images/bricks_128px.png",
+  "version": "3.17.2",
+  "publisher": "fabio.walter",
+  "license": "See License section in README.md. All thanks to the original creator https://github.com/thekalinga",
+  "homepage": "https://github.com/fabiojwalter/bootstrap4-vscode/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thekalinga/bootstrap4-vscode.git"
+    "url": "https://github.com/fabiojwalter/bootstrap4-vscode.git"
   },
   "engines": {
     "vscode": "^0.10.1"
   },
   "galleryBanner": {
-    "color": "#E6E0EA",
-    "theme": "light"
+    "color": "#C80000",
+    "theme": "dark"
   },
   "categories": [
     "Snippets"
   ],
   "contributes": {
     "snippets": [
-      {
-        "language": "blade",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "ejs",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "html",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "handlebars",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "latte",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "php",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "plaintext",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "razor",
-        "path": "./snippets.json"
-      },
-      {
-        "language": "tpl",
-        "path": "./snippets.json"
-      },
       {
         "language": "typescript",
         "path": "./snippets.json"
@@ -68,11 +32,11 @@
         "path": "./snippets.json"
       },
       {
-        "language": "twig",
+        "language": "javascript",
         "path": "./snippets.json"
       },
       {
-        "language": "vue",
+        "language": "javascriptreact",
         "path": "./snippets.json"
       }
     ]

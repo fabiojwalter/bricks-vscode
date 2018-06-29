@@ -44,332 +44,42 @@ See [here](CHANGELOG.md)
 
 ## Documentation
 
-### Bootstrap master template
+### Bricks master template
 
 Trigger | Description
 --- | ---
-$ | Bootstrap master template
-
-### Alert
-
-Trigger | Description
---- | ---
-alert-additional-content | Alert additional content
-alert-closable | Alert closable
-alert-default | Alert default
-alert-dismissible | Alert dismissible
-alert-link | Alert link
+$ | Bricks master template
 
 ### Badge
 
 Trigger | Description
 --- | ---
-badge-button | Badge button
 badge-default | Badge default
-badge-heading | Badge heading
-badge-link | Badge link
-badge-pill | Badge pill
-
-### Button group
-
-Trigger | Description
---- | ---
-bgroup-default | Button group default
-bgroup-dropdown-vertical | Button group dropdown vertical
-bgroup-dropdown | Button group dropdown
-bgroup-size | Button group size
-bgroup-toolbar | Button group toolbar
-
-### Breadcrumb
-
-Trigger | Description
---- | ---
-breadcrumb-default | Breadcrumb default
-breadcrumb-list | Breadcrumb list
-
-### Button
-
-Trigger | Description
---- | ---
-button-a | Button with link
-button-block | Button block
-button-checkbox | Button checkbox
-button-default | Button default
-button-disabled-a | Button disabled with link
-button-input | Button input
-button-outline | Button outline
-button-radio | Button radio
-button-sizes | Button sizes
-button-toggle | Button toggle
-
-### Card
-
-Trigger | Description
---- | ---
-card-align | Card align
-card-background-custom | Card background custom
-card-background | Card background
-card-blockquote | Card blockquote
-card-border | Card border
-card-columns | Card columns
-card-decks | Card decks
-card-default | Card default
-card-grid | Card grid
-card-groups | Card groups
-card-head-foot | Card head foot
-card-links | Card links
-card-list | Card list
-card-overlay | Card overlay
-card-pill-head | Card pill head
-card-subtitle | Card subtitle
-card-tab-head | Card tab head
-
-### Carousel
-
-Trigger | Description
---- | ---
-carousel-caption | Carousel caption
-carousel-default | Carousel default
-
-### Collapse
-
-Trigger | Description
---- | ---
-collapse-accordion | Collapse accordion
-collapse-button | Collapse button
-collapse-default | Collapse default
-
-### Dropdown
-
-Trigger | Description
---- | ---
-dropdown-alignment | Dropdown alignment
-dropdown-anchor | Dropdown anchor
-dropdown-button | Dropdown button
-dropdown-colored | Dropdown colored
-dropdown-default | Dropdown default
-dropdown-sized | Dropdown sized
-dropdown-split | Dropdown split
-dropdown-up-split | Dropdown up split
-dropdown-up | Dropdown up
-
-### Form
-
-Trigger | Description
---- | ---
-form-checkbox-custom | Form checkbox custom
-form-checkbox-inline | Form checkbox inline
-form-checkbox-nolabel | Form checkbox nolabel
-form-checkbox | Form checkbox
-form-email | Form email
-form-file-custom | Form file custom
-form-file | Form file
-form-grid | Form grid
-form-group-text | Form group text
-form-group | Form group
-form-help-text-inline | Form help text inline
-form-help-text | Form help text
-form-hidden | Form hidden
-form-inline | Form inline
-form-input-sizing | Form input sizing
-form-input-text | Form input text
-form-input | Form input
-form-multi-select-custom | Form multi select custom
-form-multi-select | Form multi select
-form-multil-select-sizing | Form multil select sizing
-form-password | Form password
-form-radio-custom | Form radio custom
-form-radio-inline | Form radio inline
-form-radio-nolabel | Form radio nolabel
-form-radio | Form radio
-form-reset | Form reset
-form-select-custom | Form select custom
-form-select-sizing | Form select sizing
-form-select | Form select
-form-submit | Form submit
-form-textarea | Form textarea
-form-validation | Form validation
-
-### Input group
-
-Trigger | Description
---- | ---
-igroup-button | Input group button
-igroup-checkbox-radio | Input group checkbox radio
-igroup-dropdown-segmented | Input group dropdown segmented
-igroup-dropdown | Input group dropdown
-igroup-size | Input group size
-igroup-text-both | Input group text both
-igroup-text-prefix | Input group text prefix
-igroup-text-sufix | Input group text sufix
-
-### Jumbotron
-
-Trigger | Description
---- | ---
-jumbotron-default | Jumbotron default
-jumbotron-fluid | Jumbotron fluid
-
-### List
-
-Trigger | Description
---- | ---
-list-a | List with link
-list-badge | List badge
-list-button | List button
-list-colors | List colors
-list-custom | List custom
-list-default | List default
-
-### Modal
-
-Trigger | Description
---- | ---
-modal-customize | Modal customize
-modal-default | Modal default
-modal-grid | Modal grid
-modal-sizes | Modal sizes
-
-### Nav
-
-Trigger | Description
---- | ---
-nav-a | Nav with link
-nav-complete | Nav complete
-nav-tabs-pills-a-variation | Nav tabs pills with link variation
-nav-tabs-pills-dropdown | Nav tabs pills dropdown
-nav-tabs-pills-ul-variation | Nav tabs pills with unordered list variation
-nav-ul | Nav with unordered list
-
-### Navbar
-
-Trigger | Description
---- | ---
-navbar-background-color | Navbar background color
-navbar-background | Navbar background
-navbar-default | Navbar default
-navbar-minimal-a | Navbar minimal with link
-navbar-minimal-ul | Navbar minimal with unordered list
-navbar-non-responsive | Navbar non responsive
-navbar-placement | Navbar placement
-
-### Pagination
-
-Trigger | Description
---- | ---
-pagination-alignment | Pagination alignment
-pagination-default | Pagination default
-pagination-sized | Pagination sized
-
-### Popover
-
-Trigger | Description
---- | ---
-popover-default | Popover default
-popover-direction | Popover direction
-popover-dismissable | Popover dismissable
-
-### Progress
-
-Trigger | Description
---- | ---
-progress-colored | Progress colored
-progress-default | Progress default
-progress-ie9 | Progress ie9
-progress-striped | Progress striped
-
-### Scrollspy
-
-Trigger | Description
---- | ---
-scrollspy-default | Scrollspy default
-
-### Tooltip
-
-Trigger | Description
---- | ---
-tooltip-default | Tooltip default
-
-### Figure
-
-Trigger | Description
---- | ---
-figure-default | Figure default
-
-### Image
-
-Trigger | Description
---- | ---
-image-default | Image default
-
-### Table
-
-Trigger | Description
---- | ---
-table-default | Table default
-table-special | Table special
-
-### Typography
-
-Trigger | Description
---- | ---
-typography-blockquote-reverse | Typography blockquote reverse
-typography-blockquote | Typography blockquote
-typography-description-list | Typography description list
-typography-display-heading | Typography display heading
-typography-lead | Typography lead
-typography-list-inline | Typography list inline
-typography-list-unstyled | Typography list unstyled
-typography-muted-text | Typography muted text
-
-### Grid
-
-Trigger | Description
---- | ---
-grid-col | Grid column
-grid-container-fluid | Grid container fluid
-grid-container | Grid container
-grid-default | Grid default
-grid-row | Grid row
-
-### Media
-
-Trigger | Description
---- | ---
-media-bottom | Media bottom
-media-default | Media default
-media-list | Media list
-media-middle | Media middle
-media-nesting | Media nesting
-media-right | Media right
-media-top | Media top
-
-### Responsive
-
-Trigger | Description
---- | ---
-responsive-hide-down | Responsive hide down
-responsive-hide-up | Responsive hide up
-responsive-print-show | Responsive print show
 
 ### Font awesome 4
 
 |Trigger|
 |---|
 |500px|
+|accessible-icon|
+|accusoft|
 |address-book|
-|address-book-o|
 |address-card|
-|address-card-o|
 |adjust|
 |adn|
+|adversal|
+|affiliatetheme|
+|algolia|
 |align-center|
 |align-justify|
 |align-left|
 |align-right|
+|allergies|
 |amazon|
+|amazon-pay|
 |ambulance|
 |american-sign-language-interpreting|
+|amilia|
 |anchor|
 |android|
 |angellist|
@@ -381,48 +91,54 @@ responsive-print-show | Responsive print show
 |angle-left|
 |angle-right|
 |angle-up|
+|angry|
+|angrycreative|
+|angular|
+|app-store|
+|app-store-ios|
+|apper|
 |apple|
+|apple-pay|
 |archive|
-|area-chart|
+|archway|
+|arrow-alt-circle-down|
+|arrow-alt-circle-left|
+|arrow-alt-circle-right|
+|arrow-alt-circle-up|
 |arrow-circle-down|
 |arrow-circle-left|
-|arrow-circle-o-down|
-|arrow-circle-o-left|
-|arrow-circle-o-right|
-|arrow-circle-o-up|
 |arrow-circle-right|
 |arrow-circle-up|
 |arrow-down|
 |arrow-left|
 |arrow-right|
-|arrows|
-|arrows-alt|
-|arrows-h|
-|arrows-v|
 |arrow-up|
-|asl-interpreting|
+|arrows-alt|
+|arrows-alt-h|
+|arrows-alt-v|
 |assistive-listening-systems|
 |asterisk|
+|asymmetrik|
 |at|
+|atlas|
+|audible|
 |audio-description|
-|automobile|
+|autoprefixer|
+|avianex|
+|aviato|
+|award|
+|aws|
+|backspace|
 |backward|
 |balance-scale|
 |ban|
+|band-aid|
 |bandcamp|
-|bank|
-|bar-chart|
-|bar-chart-o|
 |barcode|
 |bars|
+|baseball-ball|
+|basketball-ball|
 |bath|
-|bathtub|
-|battery|
-|battery-0|
-|battery-1|
-|battery-2|
-|battery-3|
-|battery-4|
 |battery-empty|
 |battery-full|
 |battery-half|
@@ -433,58 +149,75 @@ responsive-print-show | Responsive print show
 |behance|
 |behance-square|
 |bell|
-|bell-o|
 |bell-slash|
-|bell-slash-o|
+|bezier-curve|
 |bicycle|
+|bimobject|
 |binoculars|
 |birthday-cake|
 |bitbucket|
-|bitbucket-square|
 |bitcoin|
+|bity|
 |black-tie|
+|blackberry|
+|blender|
 |blind|
+|blogger|
+|blogger-b|
 |bluetooth|
 |bluetooth-b|
 |bold|
 |bolt|
 |bomb|
+|bong|
 |book|
+|book-open|
 |bookmark|
-|bookmark-o|
+|bowling-ball|
+|box|
+|box-open|
+|boxes|
 |braille|
 |briefcase|
+|briefcase-medical|
+|broadcast-tower|
+|broom|
+|brush|
 |btc|
 |bug|
 |building|
-|building-o|
 |bullhorn|
 |bullseye|
+|burn|
+|buromobelexperte|
 |bus|
+|bus-alt|
 |buysellads|
-|cab|
 |calculator|
 |calendar|
-|calendar-check-o|
-|calendar-minus-o|
-|calendar-o|
-|calendar-plus-o|
-|calendar-times-o|
+|calendar-alt|
+|calendar-check|
+|calendar-minus|
+|calendar-plus|
+|calendar-times|
 |camera|
 |camera-retro|
+|cannabis|
+|capsules|
 |car|
 |caret-down|
 |caret-left|
 |caret-right|
-|caret-square-o-down|
-|caret-square-o-left|
-|caret-square-o-right|
-|caret-square-o-up|
+|caret-square-down|
+|caret-square-left|
+|caret-square-right|
+|caret-square-up|
 |caret-up|
 |cart-arrow-down|
 |cart-plus|
-|cc|
+|cc-amazon-pay|
 |cc-amex|
+|cc-apple-pay|
 |cc-diners-club|
 |cc-discover|
 |cc-jcb|
@@ -492,14 +225,26 @@ responsive-print-show | Responsive print show
 |cc-paypal|
 |cc-stripe|
 |cc-visa|
+|centercode|
 |certificate|
-|chain|
-|chain-broken|
+|chalkboard|
+|chalkboard-teacher|
+|chart-area|
+|chart-bar|
+|chart-line|
+|chart-pie|
 |check|
 |check-circle|
-|check-circle-o|
+|check-double|
 |check-square|
-|check-square-o|
+|chess|
+|chess-bishop|
+|chess-board|
+|chess-king|
+|chess-knight|
+|chess-pawn|
+|chess-queen|
+|chess-rook|
 |chevron-circle-down|
 |chevron-circle-left|
 |chevron-circle-right|
@@ -510,637 +255,921 @@ responsive-print-show | Responsive print show
 |chevron-up|
 |child|
 |chrome|
+|church|
 |circle|
-|circle-o|
-|circle-o-notch|
-|circle-thin|
+|circle-notch|
 |clipboard|
-|clock-o|
+|clipboard-check|
+|clipboard-list|
+|clock|
 |clone|
-|close|
+|closed-captioning|
 |cloud|
-|cloud-download|
-|cloud-upload|
-|cny|
+|cloud-download-alt|
+|cloud-upload-alt|
+|cloudscale|
+|cloudsmith|
+|cloudversify|
+|cocktail|
 |code|
-|code-fork|
+|code-branch|
 |codepen|
 |codiepie|
 |coffee|
 |cog|
 |cogs|
+|coins|
 |columns|
 |comment|
-|commenting|
-|commenting-o|
-|comment-o|
+|comment-alt|
+|comment-dots|
+|comment-slash|
 |comments|
-|comments-o|
+|compact-disc|
 |compass|
 |compress|
+|concierge-bell|
 |connectdevelop|
 |contao|
+|cookie|
+|cookie-bite|
 |copy|
 |copyright|
+|couch|
+|cpanel|
 |creative-commons|
+|creative-commons-by|
+|creative-commons-nc|
+|creative-commons-nc-eu|
+|creative-commons-nc-jp|
+|creative-commons-nd|
+|creative-commons-pd|
+|creative-commons-pd-alt|
+|creative-commons-remix|
+|creative-commons-sa|
+|creative-commons-sampling|
+|creative-commons-sampling-plus|
+|creative-commons-share|
 |credit-card|
-|credit-card-alt|
 |crop|
+|crop-alt|
 |crosshairs|
+|crow|
+|crown|
 |css3|
+|css3-alt|
 |cube|
 |cubes|
 |cut|
-|cutlery|
-|dashboard|
+|cuttlefish|
+|d-and-d|
 |dashcube|
 |database|
 |deaf|
-|deafness|
-|dedent|
 |delicious|
+|deploydog|
+|deskpro|
 |desktop|
 |deviantart|
-|diamond|
+|diagnoses|
+|dice|
+|dice-five|
+|dice-four|
+|dice-one|
+|dice-six|
+|dice-three|
+|dice-two|
 |digg|
-|dollar|
-|dot-circle-o|
+|digital-ocean|
+|digital-tachograph|
+|discord|
+|discourse|
+|divide|
+|dizzy|
+|dna|
+|dochub|
+|docker|
+|dollar-sign|
+|dolly|
+|dolly-flatbed|
+|donate|
+|door-closed|
+|door-open|
+|dot-circle|
+|dove|
 |download|
+|draft2digital|
+|drafting-compass|
 |dribbble|
-|drivers-license|
-|drivers-license-o|
+|dribbble-square|
 |dropbox|
+|drum|
+|drum-steelpan|
 |drupal|
+|dumbbell|
+|dyalog|
+|earlybirds|
+|ebay|
 |edge|
 |edit|
-|eercast|
 |eject|
+|elementor|
 |ellipsis-h|
 |ellipsis-v|
+|ember|
 |empire|
 |envelope|
-|envelope-o|
 |envelope-open|
-|envelope-open-o|
 |envelope-square|
 |envira|
+|equals|
 |eraser|
+|erlang|
+|ethereum|
 |etsy|
-|eur|
-|euro|
-|exchange|
+|euro-sign|
+|exchange-alt|
 |exclamation|
 |exclamation-circle|
 |exclamation-triangle|
 |expand|
+|expand-arrows-alt|
 |expeditedssl|
-|external-link|
-|external-link-square|
+|external-link-alt|
+|external-link-square-alt|
 |eye|
-|eyedropper|
+|eye-dropper|
 |eye-slash|
-|fa|
 |facebook|
 |facebook-f|
-|facebook-official|
+|facebook-messenger|
 |facebook-square|
 |fast-backward|
 |fast-forward|
 |fax|
-|feed|
+|feather|
+|feather-alt|
 |female|
 |fighter-jet|
 |file|
-|file-archive-o|
-|file-audio-o|
-|file-code-o|
-|file-excel-o|
-|file-image-o|
-|file-movie-o|
-|file-o|
-|file-pdf-o|
-|file-photo-o|
-|file-picture-o|
-|file-powerpoint-o|
-|files-o|
-|file-sound-o|
-|file-text|
-|file-text-o|
-|file-video-o|
-|file-word-o|
-|file-zip-o|
+|file-alt|
+|file-archive|
+|file-audio|
+|file-code|
+|file-contract|
+|file-download|
+|file-excel|
+|file-export|
+|file-image|
+|file-import|
+|file-invoice|
+|file-invoice-dollar|
+|file-medical|
+|file-medical-alt|
+|file-pdf|
+|file-powerpoint|
+|file-prescription|
+|file-signature|
+|file-upload|
+|file-video|
+|file-word|
+|fill|
+|fill-drip|
 |film|
 |filter|
+|fingerprint|
 |fire|
 |fire-extinguisher|
 |firefox|
+|first-aid|
 |first-order|
+|first-order-alt|
+|firstdraft|
+|fish|
 |flag|
 |flag-checkered|
-|flag-o|
-|flash|
 |flask|
 |flickr|
-|floppy-o|
+|flipboard|
+|flushed|
+|fly|
 |folder|
-|folder-o|
 |folder-open|
-|folder-open-o|
 |font|
 |font-awesome|
+|font-awesome-alt|
+|font-awesome-flag|
+|font-awesome-logo-full|
 |fonticons|
+|fonticons-fi|
+|football-ball|
 |fort-awesome|
+|fort-awesome-alt|
 |forumbee|
 |forward|
 |foursquare|
 |free-code-camp|
-|frown-o|
-|futbol-o|
+|freebsd|
+|frog|
+|frown|
+|frown-open|
+|fulcrum|
+|futbol|
+|galactic-republic|
+|galactic-senate|
 |gamepad|
+|gas-pump|
 |gavel|
-|gbp|
-|ge|
-|gear|
-|gears|
+|gem|
 |genderless|
 |get-pocket|
 |gg|
 |gg-circle|
 |gift|
 |git|
+|git-square|
 |github|
 |github-alt|
 |github-square|
+|gitkraken|
 |gitlab|
-|git-square|
-|gittip|
-|glass|
+|gitter|
+|glass-martini|
+|glass-martini-alt|
+|glasses|
 |glide|
 |glide-g|
 |globe|
+|globe-africa|
+|globe-americas|
+|globe-asia|
+|gofore|
+|golf-ball|
+|goodreads|
+|goodreads-g|
 |google|
+|google-drive|
+|google-play|
 |google-plus|
-|google-plus-circle|
-|google-plus-official|
+|google-plus-g|
 |google-plus-square|
 |google-wallet|
 |graduation-cap|
 |gratipay|
 |grav|
-|group|
+|greater-than|
+|greater-than-equal|
+|grimace|
+|grin|
+|grin-alt|
+|grin-beam|
+|grin-beam-sweat|
+|grin-hearts|
+|grin-squint|
+|grin-squint-tears|
+|grin-stars|
+|grin-tears|
+|grin-tongue|
+|grin-tongue-squint|
+|grin-tongue-wink|
+|grin-wink|
+|grip-horizontal|
+|grip-vertical|
+|gripfire|
+|grunt|
+|gulp|
+|h-square|
 |hacker-news|
-|hand-grab-o|
-|hand-lizard-o|
-|hand-o-down|
-|hand-o-left|
-|hand-o-right|
-|hand-o-up|
-|hand-paper-o|
-|hand-peace-o|
-|hand-pointer-o|
-|hand-rock-o|
-|hand-scissors-o|
-|handshake-o|
-|hand-spock-o|
-|hand-stop-o|
-|hard-of-hearing|
+|hacker-news-square|
+|hand-holding|
+|hand-holding-heart|
+|hand-holding-usd|
+|hand-lizard|
+|hand-paper|
+|hand-peace|
+|hand-point-down|
+|hand-point-left|
+|hand-point-right|
+|hand-point-up|
+|hand-pointer|
+|hand-rock|
+|hand-scissors|
+|hand-spock|
+|hands|
+|hands-helping|
+|handshake|
 |hashtag|
-|hdd-o|
-|header|
+|hdd|
+|heading|
 |headphones|
+|headphones-alt|
+|headset|
 |heart|
 |heartbeat|
-|heart-o|
+|helicopter|
+|highlighter|
+|hips|
+|hire-a-helper|
 |history|
+|hockey-puck|
 |home|
-|hospital-o|
+|hooli|
+|hornbill|
+|hospital|
+|hospital-alt|
+|hospital-symbol|
+|hot-tub|
 |hotel|
+|hotjar|
 |hourglass|
-|hourglass-1|
-|hourglass-2|
-|hourglass-3|
 |hourglass-end|
 |hourglass-half|
-|hourglass-o|
 |hourglass-start|
 |houzz|
-|h-square|
 |html5|
+|hubspot|
 |i-cursor|
 |id-badge|
 |id-card|
-|id-card-o|
-|ils|
+|id-card-alt|
 |image|
+|images|
 |imdb|
 |inbox|
 |indent|
 |industry|
+|infinity|
 |info|
 |info-circle|
-|inr|
 |instagram|
-|institution|
 |internet-explorer|
-|intersex|
 |ioxhost|
 |italic|
+|itunes|
+|itunes-note|
+|java|
+|jedi-order|
+|jenkins|
+|joget|
+|joint|
 |joomla|
-|jpy|
+|js|
+|js-square|
 |jsfiddle|
 |key|
-|keyboard-o|
-|krw|
+|keybase|
+|keyboard|
+|keycdn|
+|kickstarter|
+|kickstarter-k|
+|kiss|
+|kiss-beam|
+|kiss-wink-heart|
+|kiwi-bird|
+|korvue|
 |language|
 |laptop|
+|laravel|
 |lastfm|
 |lastfm-square|
+|laugh|
+|laugh-beam|
+|laugh-squint|
+|laugh-wink|
 |leaf|
 |leanpub|
-|legal|
-|lemon-o|
-|level-down|
-|level-up|
-|life-bouy|
-|life-buoy|
+|lemon|
+|less|
+|less-than|
+|less-than-equal|
+|level-down-alt|
+|level-up-alt|
 |life-ring|
-|life-saver|
-|lightbulb-o|
-|line-chart|
+|lightbulb|
+|line|
 |link|
 |linkedin|
-|linkedin-square|
+|linkedin-in|
 |linode|
 |linux|
+|lira-sign|
 |list|
 |list-alt|
 |list-ol|
 |list-ul|
 |location-arrow|
 |lock|
-|long-arrow-down|
-|long-arrow-left|
-|long-arrow-right|
-|long-arrow-up|
+|lock-open|
+|long-arrow-alt-down|
+|long-arrow-alt-left|
+|long-arrow-alt-right|
+|long-arrow-alt-up|
 |low-vision|
+|luggage-cart|
+|lyft|
+|magento|
 |magic|
 |magnet|
-|mail-forward|
-|mail-reply|
-|mail-reply-all|
+|mailchimp|
 |male|
+|mandalorian|
 |map|
+|map-marked|
+|map-marked-alt|
 |map-marker|
-|map-o|
+|map-marker-alt|
 |map-pin|
 |map-signs|
+|marker|
 |mars|
 |mars-double|
 |mars-stroke|
 |mars-stroke-h|
 |mars-stroke-v|
+|mastodon|
 |maxcdn|
-|meanpath|
+|medal|
+|medapps|
 |medium|
+|medium-m|
 |medkit|
+|medrt|
 |meetup|
-|meh-o|
+|megaport|
+|meh|
+|meh-blank|
+|meh-rolling-eyes|
+|memory|
 |mercury|
 |microchip|
 |microphone|
+|microphone-alt|
+|microphone-alt-slash|
 |microphone-slash|
+|microsoft|
 |minus|
 |minus-circle|
 |minus-square|
-|minus-square-o|
+|mix|
 |mixcloud|
+|mizuni|
 |mobile|
-|mobile-phone|
+|mobile-alt|
 |modx|
-|money|
-|moon-o|
-|mortar-board|
+|monero|
+|money-bill|
+|money-bill-alt|
+|money-bill-wave|
+|money-bill-wave-alt|
+|money-check|
+|money-check-alt|
+|monument|
+|moon|
+|mortar-pestle|
 |motorcycle|
 |mouse-pointer|
 |music|
-|navicon|
+|napster|
 |neuter|
-|newspaper-o|
+|newspaper|
+|nimblr|
+|nintendo-switch|
+|node|
+|node-js|
+|not-equal|
+|notes-medical|
+|npm|
+|ns8|
+|nutritionix|
 |object-group|
 |object-ungroup|
 |odnoklassniki|
 |odnoklassniki-square|
+|old-republic|
 |opencart|
 |openid|
 |opera|
 |optin-monster|
+|osi|
 |outdent|
+|page4|
 |pagelines|
 |paint-brush|
-|paperclip|
+|paint-roller|
+|palette|
+|palfed|
+|pallet|
 |paper-plane|
-|paper-plane-o|
+|paperclip|
+|parachute-box|
 |paragraph|
+|parking|
+|passport|
 |paste|
+|patreon|
 |pause|
 |pause-circle|
-|pause-circle-o|
 |paw|
 |paypal|
-|pencil|
-|pencil-square|
-|pencil-square-o|
+|pen|
+|pen-alt|
+|pen-fancy|
+|pen-nib|
+|pen-square|
+|pencil-alt|
+|pencil-ruler|
+|people-carry|
 |percent|
+|percentage|
+|periscope|
+|phabricator|
+|phoenix-framework|
+|phoenix-squadron|
 |phone|
+|phone-slash|
 |phone-square|
-|photo|
-|picture-o|
-|pie-chart|
+|phone-volume|
+|php|
 |pied-piper|
 |pied-piper-alt|
+|pied-piper-hat|
 |pied-piper-pp|
+|piggy-bank|
+|pills|
 |pinterest|
 |pinterest-p|
 |pinterest-square|
 |plane|
+|plane-arrival|
+|plane-departure|
 |play|
 |play-circle|
-|play-circle-o|
+|playstation|
 |plug|
 |plus|
 |plus-circle|
 |plus-square|
-|plus-square-o|
 |podcast|
+|poo|
+|portrait|
+|pound-sign|
 |power-off|
+|prescription|
+|prescription-bottle|
+|prescription-bottle-alt|
 |print|
+|procedures|
 |product-hunt|
+|project-diagram|
+|pushed|
 |puzzle-piece|
+|python|
 |qq|
 |qrcode|
 |question|
 |question-circle|
-|question-circle-o|
+|quidditch|
+|quinscape|
 |quora|
 |quote-left|
 |quote-right|
-|ra|
+|r-project|
 |random|
 |ravelry|
+|react|
+|readme|
 |rebel|
+|receipt|
 |recycle|
+|red-river|
 |reddit|
 |reddit-alien|
 |reddit-square|
-|refresh|
+|redo|
+|redo-alt|
 |registered|
-|remove|
+|rendact|
 |renren|
-|reorder|
-|repeat|
 |reply|
 |reply-all|
-|resistance|
+|replyd|
+|researchgate|
+|resolving|
 |retweet|
-|rmb|
+|ribbon|
 |road|
+|robot|
 |rocket|
-|rotate-left|
-|rotate-right|
-|rouble|
+|rocketchat|
+|rockrms|
 |rss|
 |rss-square|
-|rub|
-|ruble|
-|rupee|
-|s15|
+|ruble-sign|
+|ruler|
+|ruler-combined|
+|ruler-horizontal|
+|ruler-vertical|
+|rupee-sign|
+|sad-cry|
+|sad-tear|
 |safari|
+|sass|
 |save|
-|scissors|
+|schlix|
+|school|
+|screwdriver|
 |scribd|
 |search|
 |search-minus|
 |search-plus|
+|searchengin|
+|seedling|
+|sellcast|
 |sellsy|
-|send|
-|send-o|
 |server|
+|servicestack|
 |share|
 |share-alt|
 |share-alt-square|
 |share-square|
-|share-square-o|
-|shekel|
-|sheqel|
-|shield|
+|shekel-sign|
+|shield-alt|
 |ship|
+|shipping-fast|
 |shirtsinbulk|
+|shoe-prints|
 |shopping-bag|
 |shopping-basket|
 |shopping-cart|
+|shopware|
 |shower|
-|signal|
-|sign-in|
-|signing|
+|shuttle-van|
+|sign|
+|sign-in-alt|
 |sign-language|
-|sign-out|
+|sign-out-alt|
+|signal|
+|signature|
 |simplybuilt|
+|sistrix|
 |sitemap|
+|sith|
+|skull|
 |skyatlas|
 |skype|
 |slack|
-|sliders|
+|slack-hash|
+|sliders-h|
 |slideshare|
-|smile-o|
+|smile|
+|smile-beam|
+|smile-wink|
+|smoking|
+|smoking-ban|
 |snapchat|
 |snapchat-ghost|
 |snapchat-square|
-|snowflake-o|
-|soccer-ball-o|
+|snowflake|
+|solar-panel|
 |sort|
-|sort-alpha-asc|
-|sort-alpha-desc|
-|sort-amount-asc|
-|sort-amount-desc|
-|sort-asc|
-|sort-desc|
+|sort-alpha-down|
+|sort-alpha-up|
+|sort-amount-down|
+|sort-amount-up|
 |sort-down|
-|sort-numeric-asc|
-|sort-numeric-desc|
+|sort-numeric-down|
+|sort-numeric-up|
 |sort-up|
 |soundcloud|
+|spa|
 |space-shuttle|
+|speakap|
 |spinner|
-|spoon|
+|splotch|
 |spotify|
+|spray-can|
 |square|
-|square-o|
+|square-full|
+|squarespace|
 |stack-exchange|
 |stack-overflow|
+|stamp|
 |star|
 |star-half|
-|star-half-empty|
-|star-half-full|
-|star-half-o|
-|star-o|
+|star-half-alt|
+|staylinked|
 |steam|
 |steam-square|
+|steam-symbol|
 |step-backward|
 |step-forward|
 |stethoscope|
+|sticker-mule|
 |sticky-note|
-|sticky-note-o|
 |stop|
 |stop-circle|
-|stop-circle-o|
+|stopwatch|
+|store|
+|store-alt|
+|strava|
+|stream|
 |street-view|
 |strikethrough|
+|stripe|
+|stripe-s|
+|stroopwafel|
+|studiovinari|
 |stumbleupon|
 |stumbleupon-circle|
 |subscript|
 |subway|
 |suitcase|
-|sun-o|
+|suitcase-rolling|
+|sun|
 |superpowers|
 |superscript|
-|support|
+|supple|
+|surprise|
+|swatchbook|
+|swimmer|
+|swimming-pool|
+|sync|
+|sync-alt|
+|syringe|
 |table|
+|table-tennis|
 |tablet|
-|tachometer|
+|tablet-alt|
+|tablets|
+|tachometer-alt|
 |tag|
 |tags|
+|tape|
 |tasks|
 |taxi|
+|teamspeak|
 |telegram|
-|television|
+|telegram-plane|
 |tencent-weibo|
 |terminal|
 |text-height|
 |text-width|
 |th|
+|th-large|
+|th-list|
+|themeco|
 |themeisle|
 |thermometer|
-|thermometer-0|
-|thermometer-1|
-|thermometer-2|
-|thermometer-3|
-|thermometer-4|
 |thermometer-empty|
 |thermometer-full|
 |thermometer-half|
 |thermometer-quarter|
 |thermometer-three-quarters|
-|th-large|
-|th-list|
 |thumbs-down|
-|thumbs-o-down|
-|thumbs-o-up|
 |thumbs-up|
-|thumb-tack|
-|ticket|
+|thumbtack|
+|ticket-alt|
 |times|
 |times-circle|
-|times-circle-o|
-|times-rectangle|
-|times-rectangle-o|
 |tint|
-|toggle-down|
-|toggle-left|
+|tint-slash|
+|tired|
 |toggle-off|
 |toggle-on|
-|toggle-right|
-|toggle-up|
+|toolbox|
+|tooth|
+|trade-federation|
 |trademark|
 |train|
 |transgender|
 |transgender-alt|
 |trash|
-|trash-o|
+|trash-alt|
 |tree|
 |trello|
 |tripadvisor|
 |trophy|
 |truck|
-|try|
+|truck-loading|
+|truck-moving|
+|tshirt|
 |tty|
 |tumblr|
 |tumblr-square|
-|turkish-lira|
 |tv|
 |twitch|
 |twitter|
 |twitter-square|
+|typo3|
+|uber|
+|uikit|
 |umbrella|
+|umbrella-beach|
 |underline|
 |undo|
+|undo-alt|
+|uniregistry|
 |universal-access|
 |university|
 |unlink|
 |unlock|
 |unlock-alt|
-|unsorted|
+|untappd|
 |upload|
 |usb|
-|usd|
 |user|
+|user-alt|
+|user-alt-slash|
+|user-astronaut|
+|user-check|
 |user-circle|
-|user-circle-o|
+|user-clock|
+|user-cog|
+|user-edit|
+|user-friends|
+|user-graduate|
+|user-lock|
 |user-md|
-|user-o|
+|user-minus|
+|user-ninja|
 |user-plus|
-|users|
 |user-secret|
+|user-shield|
+|user-slash|
+|user-tag|
+|user-tie|
 |user-times|
-|vcard|
-|vcard-o|
+|users|
+|users-cog|
+|ussunnah|
+|utensil-spoon|
+|utensils|
+|vaadin|
+|vector-square|
 |venus|
 |venus-double|
 |venus-mars|
 |viacoin|
 |viadeo|
 |viadeo-square|
-|video-camera|
+|vial|
+|vials|
+|viber|
+|video|
+|video-slash|
 |vimeo|
 |vimeo-square|
+|vimeo-v|
 |vine|
 |vk|
-|volume-control-phone|
+|vnv|
+|volleyball-ball|
 |volume-down|
 |volume-off|
 |volume-up|
-|warning|
-|wechat|
+|vuejs|
+|walking|
+|wallet|
+|warehouse|
+|weebly|
 |weibo|
+|weight|
+|weight-hanging|
 |weixin|
 |whatsapp|
+|whatsapp-square|
 |wheelchair|
-|wheelchair-alt|
+|whmcs|
 |wifi|
 |wikipedia-w|
 |window-close|
-|window-close-o|
 |window-maximize|
 |window-minimize|
 |window-restore|
 |windows|
-|won|
+|wine-glass|
+|wine-glass-alt|
+|wix|
+|wolf-pack-battalion|
+|won-sign|
 |wordpress|
+|wordpress-simple|
 |wpbeginner|
 |wpexplorer|
 |wpforms|
 |wrench|
+|x-ray|
+|xbox|
 |xing|
 |xing-square|
-|yahoo|
-|yc|
 |y-combinator|
-|y-combinator-square|
-|yc-square|
+|yahoo|
+|yandex|
+|yandex-international|
 |yelp|
-|yen|
+|yen-sign|
 |yoast|
 |youtube|
-|youtube-play|
 |youtube-square|
 
 ### Font awesome 5 Free
