@@ -25,7 +25,7 @@ class SnippetGenerator {
 
         // Bricks
         PathMatchingResourcePatternResolver resourceLoader = new PathMatchingResourcePatternResolver();
-        def snippetResources = Arrays.asList(resourceLoader.getResources("/bricks/**/*.html"))
+        def snippetResources = Arrays.asList(resourceLoader.getResources("/bricks/**/*.jsx"))
         snippetResources.forEach({ snippetResource ->
             StringWriter writer = new StringWriter()
             IOUtils.copy(snippetResource.getInputStream(), writer, defaultCharset())
@@ -47,19 +47,19 @@ class SnippetGenerator {
         // Font awesome
         def iconsContainer = mapper.readValue(getClass().getResourceAsStream('/font-awesome.json'), Icons.class)
         iconsContainer.icons.forEach({ iconStr ->
-            putSnippet(descriptionToSnippet, "$FONT_AWESOME_PREFIX-${iconStr}", "iconStr", iconStr)
+            putSnippet(descriptionToSnippet, "$FONT_AWESOME_PREFIX-${iconStr}", iconStr, iconStr)
         })
 
         // Material Icons
         def materialIcons = mapper.readValue(getClass().getResourceAsStream('/material-icons.json'), Icons.class)
         materialIcons.icons.forEach({ iconStr ->
-            putSnippet(descriptionToSnippet, "$MATERIAL_ICONS_PREFIX-${iconStr}", "iconStr", iconStr)
+            putSnippet(descriptionToSnippet, "$MATERIAL_ICONS_PREFIX-${iconStr}", iconStr, iconStr)
         })
 
         // Material Design Cummunity Icons
         def materialCommunity = mapper.readValue(getClass().getResourceAsStream('/material-icons-community.json'), Icons.class)
         materialCommunity.icons.forEach({ iconStr ->
-            putSnippet(descriptionToSnippet, "$MATERIAL_ICONS_COMMUNITY_PREFIX-${iconStr}", "iconStr", iconStr)
+            putSnippet(descriptionToSnippet, "$MATERIAL_ICONS_COMMUNITY_PREFIX-${iconStr}", iconStr, iconStr)
         })
 
         mapper = new ObjectMapper()

@@ -85,36 +85,38 @@ class ReadmeGenerator {
 
         // Handle font awesome 4
         builder << "\n"
-        builder << "### Font awesome 4\n\n"
-        builder << "|Trigger|\n"
-        builder << "|---|\n"
+        builder << "### Font awesome\n\n"
+        builder << "|Trigger|Icon\n"
+        builder << "|---|---\n"
         ObjectMapper mapper = new ObjectMapper()
         def iconsContainer = mapper.readValue(getClass().getResourceAsStream('/font-awesome.json'), Icons.class)
         iconsContainer.icons.forEach({ iconStr ->
+            builder << "|${iconStr}|<i class=\"fa fa-${iconStr}\"/>\n"
+        })
+
+        // Handle Material Icons
+        builder << "\n"
+        builder << "### Material Icons\n\n"
+        builder << "|Trigger|\n"
+        builder << "|---|\n"
+        ObjectMapper mapperMi = new ObjectMapper()
+        def iconsContainerMi = mapperMi.readValue(getClass().getResourceAsStream('/material-icons.json'), Icons.class)
+        iconsContainerMi.icons.forEach({ iconStr ->
             builder << "|${iconStr}|\n"
         })
 
-        // Handle font awesome 5 Free
+        // Handle Material Design Community Icons
         builder << "\n"
-        builder << "### Font awesome 5 Free\n\n"
+        builder << "### Material Design Community Icons\n\n"
         builder << "|Trigger|\n"
         builder << "|---|\n"
-        mapper = new ObjectMapper()
-        iconsContainer = mapper.readValue(getClass().getResourceAsStream('/font-awesome5.json'), Icons.class)
-        iconsContainer.icons.forEach({ iconStr ->
+        ObjectMapper mapperMc = new ObjectMapper()
+        def iconsContainerMc = mapperMc.readValue(getClass().getResourceAsStream('/material-icons-community.json'), Icons.class)
+        iconsContainerMc.icons.forEach({ iconStr ->
             builder << "|${iconStr}|\n"
         })
 
-        // Handle font awesome 5 Pro
-        builder << "\n"
-        builder << "### Font awesome 5 Pro\n\n"
-        builder << "|Trigger|\n"
-        builder << "|---|\n"
-        mapper = new ObjectMapper()
-        iconsContainer = mapper.readValue(getClass().getResourceAsStream('/font-awesome5-pro.json'), Icons.class)
-        iconsContainer.icons.forEach({ iconStr ->
-            builder << "|${iconStr}|\n"
-        })
+
 
         StringWriter readmeTemplate = new StringWriter()
         IOUtils.copy(getClass().getResourceAsStream("/readme-template.md"), readmeTemplate, defaultCharset())
