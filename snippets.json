@@ -1,7 +1,7 @@
 {
   "Bricks master template" : {
     "prefix" : "bx-$",
-    "body" : "import React, {PureComponent} from 'react';\r\n/**\r\n* @author ${1:Author} <${2:Email}@wssim.com.br>\r\n* @since $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE\r\n*/\r\nexport default class ${3:${TM_FILENAME/(.*)\\..+$/$1/}} extends PureComponent {\r\n\r\n    static propTypes = {\r\n        $5\r\n    }\r\n\r\n    static defaultProps = {\r\n        $6\r\n    }\r\n\r\n    render() {\r\n        return (\r\n            $7\r\n        );\r\n    }\r\n\r\n}$0",
+    "body" : "import React, {PureComponent} from 'react';\r\n/**\r\n* @author ${1:Author} <${2:Email}@wssim.com.br>\r\n* @since $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE\r\n*/\r\nexport default class ${3:${TM_FILENAME/(.*)\\..+$/$1/}} extends PureComponent {\r\n\r\n    static propTypes = {\r\n        $5\r\n    }\r\n\r\n    static defaultProps = {\r\n        $6\r\n    }\r\n\r\n    render() {\r\n        return (\r\n            $7\r\n        );\r\n    }\r\n}$0",
     "description" : "Bricks master template",
     "scope" : ""
   },
