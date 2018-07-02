@@ -1,8 +1,8 @@
 <Bx.InputText
-    id="${1:text}"
-    label="${2:Label}"
+    id="$1"
+    label="$2"
 
     onChange={this.handleOnChange}
     required
     type="password"
-    value="${3:Value}" />
+    value={this.props.$3} />

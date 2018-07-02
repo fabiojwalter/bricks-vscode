@@ -14,6 +14,7 @@ class SnippetGenerator {
     public static final FONT_AWESOME_PREFIX = "fa"
     public static final MATERIAL_ICONS_PREFIX = "mi"
     public static final MATERIAL_ICONS_COMMUNITY_PREFIX = "mc"
+    public static final MATERIAL_COLORS_PALETTE_PREFIX = "mp"
 
     static void main(String[] args) {
         ObjectMapper mapper = new ObjectMapper()
@@ -43,31 +44,42 @@ class SnippetGenerator {
             def snippet = Snippet.builder().prefix(triggerPattern).body(templateStr).description(helpMsg).scope('').build()
             descriptionToSnippet.put(helpMsg, snippet)
         })
+        println "_Bricks components generated!"
 
         // Font awesome
         def iconsContainer = mapper.readValue(getClass().getResourceAsStream('/font-awesome.json'), Icons.class)
         iconsContainer.icons.forEach({ iconStr ->
             putSnippet(descriptionToSnippet, "$FONT_AWESOME_PREFIX-${iconStr}", iconStr, iconStr)
         })
+        println "_Font Awesome generated!"
 
         // Material Icons
         def materialIcons = mapper.readValue(getClass().getResourceAsStream('/material-icons.json'), Icons.class)
         materialIcons.icons.forEach({ iconStr ->
             putSnippet(descriptionToSnippet, "$MATERIAL_ICONS_PREFIX-${iconStr}", iconStr, iconStr)
         })
+        println "_Material Icons generated!"
 
         // Material Design Cummunity Icons
         def materialCommunity = mapper.readValue(getClass().getResourceAsStream('/material-icons-community.json'), Icons.class)
         materialCommunity.icons.forEach({ iconStr ->
             putSnippet(descriptionToSnippet, "$MATERIAL_ICONS_COMMUNITY_PREFIX-${iconStr}", iconStr, iconStr)
         })
+        println "_Material Community Icons generated!"
 
+        // Material Colors
+        def materialColors = mapper.readValue(getClass().getResourceAsStream('/material-colors.json'), Icons.class)
+        materialColors.icons.forEach({ iconStr ->
+            putSnippet(descriptionToSnippet, "$MATERIAL_COLORS_PALETTE_PREFIX-${iconStr}", iconStr, iconStr)
+        })
+        println "_Colors generated!"
+        
         mapper = new ObjectMapper()
         mapper.enable(INDENT_OUTPUT)
         File file = new File("snippets.json")
 
         mapper.writeValue(file, descriptionToSnippet)
-        println "Regenerated snippets. Saved to ${file.absolutePath}"
+        println "\n\nRegenerated snippets. Saved to ${file.absolutePath}"
     }
 
     static void putSnippet(Map<String, Snippet> descriptionToSnippetTarget, String triggerPattern, String templateStr, String helpMsg) {

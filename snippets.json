@@ -1,68 +1,164 @@
 {
   "Bricks master template" : {
     "prefix" : "bx-$",
-    "body" : "import React, {PureComponent} from 'react';\r\n/**\r\n* @author ${1:author} <${author}@wssim.com.br>\r\n* @since $2\r\n*/\r\nclass ${3:Class} extends PureComponent {\r\n\r\n    static propTypes = {\r\n        $4\r\n    }\r\n\r\n    static defaultProps = {\r\n        $5\r\n    }\r\n\r\n    render() {\r\n        return (\r\n            $0\r\n        );\r\n    }\r\n\r\n}\r\n\r\nexport default ${Class};",
+    "body" : "import React, {PureComponent} from 'react';\r\n/**\r\n* @author ${1:Author} <${2:Email}@wssim.com.br>\r\n* @since $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE\r\n*/\r\nexport default class ${3:${TM_FILENAME/(.*)\\..+$/$1/}} extends PureComponent {\r\n\r\n    static propTypes = {\r\n        $5\r\n    }\r\n\r\n    static defaultProps = {\r\n        $6\r\n    }\r\n\r\n    render() {\r\n        return (\r\n            $7\r\n        );\r\n    }\r\n\r\n}$0",
     "description" : "Bricks master template",
     "scope" : ""
   },
   "badge default" : {
     "prefix" : "bx-badge-default",
-    "body" : "<Bx.Badge color=\"${1:light-blue|red}\">$2</Bx.Badge>$0",
+    "body" : "<Bx.Badge color=\"${1|one,two,three|}\">$2</Bx.Badge>$0",
     "description" : "badge default",
+    "scope" : ""
+  },
+  "button accent" : {
+    "prefix" : "bx-button-accent",
+    "body" : "<Bx.Button\r\n    accent>\r\n    $1\r\n</Bx.Button>$0",
+    "description" : "button accent",
+    "scope" : ""
+  },
+  "button default" : {
+    "prefix" : "bx-button-default",
+    "body" : "<Bx.Button>\r\n    $1\r\n</Bx.Button>$0",
+    "description" : "button default",
+    "scope" : ""
+  },
+  "button flat" : {
+    "prefix" : "bx-button-flat",
+    "body" : "<Bx.Button\r\n    flat>\r\n    $1\r\n</Bx.Button>$0",
+    "description" : "button flat",
+    "scope" : ""
+  },
+  "button onclick" : {
+    "prefix" : "bx-button-onclick",
+    "body" : "<Bx.Button\r\n    onClick={${1:this.handleClick}}>\r\n    $2\r\n</Bx.Button>$0",
+    "description" : "button onclick",
+    "scope" : ""
+  },
+  "button primary" : {
+    "prefix" : "bx-button-primary",
+    "body" : "<Bx.Button\r\n    primary>\r\n    $1\r\n</Bx.Button>$0",
+    "description" : "button primary",
+    "scope" : ""
+  },
+  "card default" : {
+    "prefix" : "bx-card-default",
+    "body" : "<Bx.Card>\n    <Bx.Card.Header \n        title=\"${1:Title}\" \n        subTitle=\"${2:SubTitle}\"/>\n    <Bx.Card.Content>\n        <p>\n            ${1:Title} + ${2:SubTitle}\n        </p>\n    </Bx.Card.Content>\n    <Bx.Card.Actions>\n        <Bx.Button \n            primary>\n            ${3:PrimaryAction}\n        </Bx.Button>\n        <Bx.Button \n            accent \n            flat>\n            ${4:SecondaryAction}\n        </Bx.Button>\n    </Bx.Card.Actions>\n</Bx.Card>$0",
+    "description" : "card default",
+    "scope" : ""
+  },
+  "card header menu actions" : {
+    "prefix" : "bx-card-header-menu-actions",
+    "body" : "<Bx.Card>\n    <Bx.Card.Header title=\"${1:Title}\" \n        subTitle=\"${2:SubTitle}\" \n        avatar={\n        <Bx.Avatar size=\"lg\">\n            <img src=\"$3\">\n        </Bx.Avatar>} \n        overflowMenu={\n            <Bx.OverflowMenu>\n                <Bx.ListView>\n                    <Bx.ListItem>\n                        <Bx.ListItem.Content>\n                            <Bx.ListItem.Title>menu entry...</Bx.ListItem.Title>\n                        </Bx.ListItem.Content>\n                    </Bx.ListItem>\n                    <Bx.ListItem>\n                        <Bx.ListItem.Content>\n                            <Bx.ListItem.Title>menu entry...</Bx.ListItem.Title>\n                        </Bx.ListItem.Content>\n                    </Bx.ListItem>\n                </Bx.ListView>\n            </Bx.OverflowMenu>\n        }  />\n        <Bx.Card.Content>\n            Sample content...\n        </Bx.Card.Content>\n        <Bx.Card.Actions>\n            <Bx.Button primary>\n                ${4:OK}\n            </Bx.Button>\n            <Bx.Button accent flat>\n                ${5:Cancel}\n            </Bx.Button>\n        </Bx.Card.Actions>\n</Bx.Card>$0",
+    "description" : "card header menu actions",
     "scope" : ""
   },
   "chip children deletable onclick" : {
     "prefix" : "bx-chip-children-deletable-onclick",
-    "body" : "<Bx.Chip\n    contact-color=\"${1:red|teal|deep-purple}\"\n    deletable\n    id=\"$2\"\n    label=\"$3\"\n    onClick={${4:handleClick}}\n    onClickDeletable={${4:handleDelete}}>\n    <Bx.Icon>\n        ${4:person|cloud}\n    </Bx.Icon>\n</Bx.Chip>$0",
+    "body" : "<Bx.Chip\r\n    contact-color=\"${1:color}\"\r\n    deletable\r\n    id=\"$2\"\r\n    label=\"$3\"\r\n    onClick={${4:handleClick}}\r\n    onClickDeletable={${4:handleDelete}}>\r\n    <Bx.Icon>\r\n        ${4:icon}\r\n    </Bx.Icon>\r\n</Bx.Chip>$0",
     "description" : "chip children deletable onclick",
     "scope" : ""
   },
   "chip default" : {
     "prefix" : "bx-chip-default",
-    "body" : "<Bx.Chip\n    deletable\n    id=\"$1\"\n    label=\"$2\"/>$0",
+    "body" : "<Bx.Chip\r\n    deletable\r\n    id=\"$1\"\r\n    label=\"$2\"/>$0",
     "description" : "chip default",
     "scope" : ""
   },
   "chip deletable" : {
     "prefix" : "bx-chip-deletable",
-    "body" : "<Bx.Chip\n    deletable\n    id=\"$1\"\n    label=\"$2\"\n    onClickDeletable=${3:handleMethod} />$0",
+    "body" : "<Bx.Chip\r\n    deletable\r\n    id=\"$1\"\r\n    label=\"$2\"\r\n    onClickDeletable=${3:handleMethod} />$0",
     "description" : "chip deletable",
     "scope" : ""
   },
   "chip onclick" : {
     "prefix" : "bx-chip-onclick",
-    "body" : "<Bx.Chip\n    deletable\n    id=\"$1\"\n    label=\"$2\"\n    onClick=${3:handleMethod} />$0",
+    "body" : "<Bx.Chip\r\n    deletable\r\n    id=\"$1\"\r\n    label=\"$2\"\r\n    onClick=${3:handleMethod} />$0",
     "description" : "chip onclick",
     "scope" : ""
   },
   "chip use children" : {
     "prefix" : "bx-chip-use-children",
-    "body" : "<Bx.Chip\n    contact-color=\"${1:red|teal|deep-purple}\"\n    id=\"$2\"\n    label=\"$3\">\n    <Bx.Icon>\n        ${4:person|cloud}\n    </Bx.Icon>\n</Bx.Chip>$0",
+    "body" : "<Bx.Chip\r\n    contact-color=\"${1:Color}\"\r\n    id=\"$2\"\r\n    label=\"$3\">\r\n    <Bx.Icon>\r\n        ${4:Icon}\r\n    </Bx.Icon>\r\n</Bx.Chip>$0",
     "description" : "chip use children",
     "scope" : ""
   },
   "input text default" : {
     "prefix" : "bx-input-text-default",
-    "body" : "<Bx.InputText\n        id=\"${1:text}\"\n        label=\"${2:Label}\"\n\n        onChange={this.handleOnChange}\n        required\n        type=\"text\"\n        value=\"${3:Value}\" />$0",
+    "body" : "<Bx.InputText\r\n    id=\"$1\"\r\n    label=\"$2\"\r\n\r\n    onChange={this.handleOnChange}\r\n    required\r\n    type=\"text\"\r\n    value={this.props.$3} />$0",
     "description" : "input text default",
+    "scope" : ""
+  },
+  "input text email" : {
+    "prefix" : "bx-input-text-email",
+    "body" : "<Bx.InputText\r\n    id=\"$1\"\r\n    label=\"$2\"\r\n\r\n    onChange={this.handleOnChange}\r\n    required\r\n    type=\"email\"\r\n    value={this.props.$3} />$0",
+    "description" : "input text email",
     "scope" : ""
   },
   "input text password" : {
     "prefix" : "bx-input-text-password",
-    "body" : "<Bx.InputText\n    id=\"${1:text}\"\n    label=\"${2:Label}\"\n\n    onChange={this.handleOnChange}\n    required\n    type=\"password\"\n    value=\"${3:Value}\" />$0",
+    "body" : "<Bx.InputText\r\n    id=\"$1\"\r\n    label=\"$2\"\r\n\r\n    onChange={this.handleOnChange}\r\n    required\r\n    type=\"password\"\r\n    value={this.props.$3} />$0",
     "description" : "input text password",
+    "scope" : ""
+  },
+  "input text tel" : {
+    "prefix" : "bx-input-text-tel",
+    "body" : "<Bx.InputText\r\n    id=\"$1\"\r\n    label=\"$2\"\r\n\r\n    onChange={this.handleOnChange}\r\n    required\r\n    type=\"tel\"\r\n    value={this.props.$3} />$0",
+    "description" : "input text tel",
+    "scope" : ""
+  },
+  "input text url" : {
+    "prefix" : "bx-input-text-url",
+    "body" : "<Bx.InputText\r\n    id=\"$1\"\r\n    label=\"$2\"\r\n\r\n    onChange={this.handleOnChange}\r\n    required\r\n    type=\"url\"\r\n    value={this.props.$3} />$0",
+    "description" : "input text url",
+    "scope" : ""
+  },
+  "listview default" : {
+    "prefix" : "bx-listview-default",
+    "body" : "<Bx.SubHeader>\n        $1\n    </Bx.SubHeader>\n    <Bx.ListView\n        avatar\n        border\n        item-renderer={_item-renderer}\n        items={List [ [object Object], [object Object], [object Object] ]} />$0",
+    "description" : "listview default",
+    "scope" : ""
+  },
+  "switch checked" : {
+    "prefix" : "bx-switch-checked",
+    "body" : "<Bx.Switch\n        id=\"$1\"\n        checked\n        label=\"$2\"\n        onChange={this.onChangeChecked} />$0",
+    "description" : "switch checked",
+    "scope" : ""
+  },
+  "switch default" : {
+    "prefix" : "bx-switch-default",
+    "body" : "<Bx.Switch\n        id=\"$1\"\n        label=\"$2\"\n        onChange={this.onChangeChecked} />$0",
+    "description" : "switch default",
+    "scope" : ""
+  },
+  "tabs default" : {
+    "prefix" : "bx-tabs-default",
+    "body" : "<Bx.Tabs id=\"tabs\">\n    <Bx.TabHeader>\n        <Bx.TabHeader.Item text=\"${1:Tab1}\" />\n        <Bx.TabHeader.Item text=\"${2:Tab2}\" />\n        <Bx.TabHeader.Item text=\"${3:Tab3}\" />\n    </Bx.TabHeader>\n    <Bx.TabContent>\n        <Bx.TabContent.Item>\n\t\t\t\t${1:Tab1}\n\t\t</Bx.TabContent.Item>\n        <Bx.TabContent.Item>\n\t\t\t\t${2:Tab2}\n\t\t</Bx.TabContent.Item>\n        <Bx.TabContent.Item>\n\t\t\t\t${3:Tab3}\n\t\t</Bx.TabContent.Item>\n    </Bx.TabContent>\n</Bx.Tabs>$0",
+    "description" : "tabs default",
     "scope" : ""
   },
   "text default" : {
     "prefix" : "bx-text-default",
-    "body" : "<Bx.Text\n        bold\n        capitalize\n        color=\"${1:teal|black}\"\n        deleted\n        ellipsis\n        italic\n        left-space\n        lines={1}\n        lowercase\n        right-space\n        size={${2:1.0|2.0}}\n        underline\n        uppercase>\n        $3\n    </Bx.Text>$0",
+    "body" : "<Bx.Text\r\n        bold\r\n        capitalize\r\n        color=\"${1:Color\"\r\n        deleted\r\n        ellipsis\r\n        italic\r\n        left-space\r\n        lines={1}\r\n        lowercase\r\n        right-space\r\n        size={${2:1.0|2.0}}\r\n        underline\r\n        uppercase>\r\n        $3\r\n    </Bx.Text>$0",
     "description" : "text default",
     "scope" : ""
   },
   "text tooltip" : {
     "prefix" : "bx-text-tooltip",
-    "body" : "<Bx.Text \n    color=${1:teal|black} \n    \n    data-for=\"tooltip\" \n    data-tip>\n        ${2:Text}\n</Bx.Text>\n<Bx.Tooltip id=\"tooltip\">\n    $3\n</Bx.Tooltip>$0",
+    "body" : "<Bx.Text \r\n        color=${1:Color} \r\n        \r\n        data-for=\"tooltip\" \r\n        data-tip>\r\n            ${2:Label}\r\n    </Bx.Text>\r\n    <Bx.Tooltip id=\"tooltip\">\r\n        ${3:TooltipText}\r\n    </Bx.Tooltip>$0",
     "description" : "text tooltip",
+    "scope" : ""
+  },
+  "text area text area required" : {
+    "prefix" : "bx-text-area-text-area-required",
+    "body" : "<Bx.TextArea\n    id=\"$1\"\n    label=\"$2\"\n    maxLength={${3:MaxLength}}\n    onChange={this.handleChange}\n    required\n    value={this.props.$4} />$0",
+    "description" : "text area text area required",
+    "scope" : ""
+  },
+  "text area text area" : {
+    "prefix" : "bx-text-area-text-area",
+    "body" : "<Bx.TextArea\n    id=\"$1\"\n    label=\"$2\"\n    maxLength={${3:MaxLength}}\n    onChange={this.handleChange}\n    value={this.props.$4} />$0",
+    "description" : "text area text area",
     "scope" : ""
   },
   "500px" : {
@@ -23193,6 +23289,1542 @@
     "prefix" : "mc-zip-disk",
     "body" : "zip-disk",
     "description" : "zip-disk",
+    "scope" : ""
+  },
+  "amber-50" : {
+    "prefix" : "mp-amber-50",
+    "body" : "amber-50",
+    "description" : "amber-50",
+    "scope" : ""
+  },
+  "amber-100" : {
+    "prefix" : "mp-amber-100",
+    "body" : "amber-100",
+    "description" : "amber-100",
+    "scope" : ""
+  },
+  "amber-200" : {
+    "prefix" : "mp-amber-200",
+    "body" : "amber-200",
+    "description" : "amber-200",
+    "scope" : ""
+  },
+  "amber-300" : {
+    "prefix" : "mp-amber-300",
+    "body" : "amber-300",
+    "description" : "amber-300",
+    "scope" : ""
+  },
+  "amber-400" : {
+    "prefix" : "mp-amber-400",
+    "body" : "amber-400",
+    "description" : "amber-400",
+    "scope" : ""
+  },
+  "amber-500" : {
+    "prefix" : "mp-amber-500",
+    "body" : "amber-500",
+    "description" : "amber-500",
+    "scope" : ""
+  },
+  "amber-600" : {
+    "prefix" : "mp-amber-600",
+    "body" : "amber-600",
+    "description" : "amber-600",
+    "scope" : ""
+  },
+  "amber-700" : {
+    "prefix" : "mp-amber-700",
+    "body" : "amber-700",
+    "description" : "amber-700",
+    "scope" : ""
+  },
+  "amber-800" : {
+    "prefix" : "mp-amber-800",
+    "body" : "amber-800",
+    "description" : "amber-800",
+    "scope" : ""
+  },
+  "amber-900" : {
+    "prefix" : "mp-amber-900",
+    "body" : "amber-900",
+    "description" : "amber-900",
+    "scope" : ""
+  },
+  "amber-A100" : {
+    "prefix" : "mp-amber-A100",
+    "body" : "amber-A100",
+    "description" : "amber-A100",
+    "scope" : ""
+  },
+  "amber-A200" : {
+    "prefix" : "mp-amber-A200",
+    "body" : "amber-A200",
+    "description" : "amber-A200",
+    "scope" : ""
+  },
+  "amber-A400" : {
+    "prefix" : "mp-amber-A400",
+    "body" : "amber-A400",
+    "description" : "amber-A400",
+    "scope" : ""
+  },
+  "amber-A700" : {
+    "prefix" : "mp-amber-A700",
+    "body" : "amber-A700",
+    "description" : "amber-A700",
+    "scope" : ""
+  },
+  "black" : {
+    "prefix" : "mp-black",
+    "body" : "black",
+    "description" : "black",
+    "scope" : ""
+  },
+  "blue-50" : {
+    "prefix" : "mp-blue-50",
+    "body" : "blue-50",
+    "description" : "blue-50",
+    "scope" : ""
+  },
+  "blue-100" : {
+    "prefix" : "mp-blue-100",
+    "body" : "blue-100",
+    "description" : "blue-100",
+    "scope" : ""
+  },
+  "blue-200" : {
+    "prefix" : "mp-blue-200",
+    "body" : "blue-200",
+    "description" : "blue-200",
+    "scope" : ""
+  },
+  "blue-300" : {
+    "prefix" : "mp-blue-300",
+    "body" : "blue-300",
+    "description" : "blue-300",
+    "scope" : ""
+  },
+  "blue-400" : {
+    "prefix" : "mp-blue-400",
+    "body" : "blue-400",
+    "description" : "blue-400",
+    "scope" : ""
+  },
+  "blue-500" : {
+    "prefix" : "mp-blue-500",
+    "body" : "blue-500",
+    "description" : "blue-500",
+    "scope" : ""
+  },
+  "blue-600" : {
+    "prefix" : "mp-blue-600",
+    "body" : "blue-600",
+    "description" : "blue-600",
+    "scope" : ""
+  },
+  "blue-700" : {
+    "prefix" : "mp-blue-700",
+    "body" : "blue-700",
+    "description" : "blue-700",
+    "scope" : ""
+  },
+  "blue-800" : {
+    "prefix" : "mp-blue-800",
+    "body" : "blue-800",
+    "description" : "blue-800",
+    "scope" : ""
+  },
+  "blue-900" : {
+    "prefix" : "mp-blue-900",
+    "body" : "blue-900",
+    "description" : "blue-900",
+    "scope" : ""
+  },
+  "blue-A100" : {
+    "prefix" : "mp-blue-A100",
+    "body" : "blue-A100",
+    "description" : "blue-A100",
+    "scope" : ""
+  },
+  "blue-A200" : {
+    "prefix" : "mp-blue-A200",
+    "body" : "blue-A200",
+    "description" : "blue-A200",
+    "scope" : ""
+  },
+  "blue-A400" : {
+    "prefix" : "mp-blue-A400",
+    "body" : "blue-A400",
+    "description" : "blue-A400",
+    "scope" : ""
+  },
+  "blue-A700" : {
+    "prefix" : "mp-blue-A700",
+    "body" : "blue-A700",
+    "description" : "blue-A700",
+    "scope" : ""
+  },
+  "blue-gray-50" : {
+    "prefix" : "mp-blue-gray-50",
+    "body" : "blue-gray-50",
+    "description" : "blue-gray-50",
+    "scope" : ""
+  },
+  "blue-gray-100" : {
+    "prefix" : "mp-blue-gray-100",
+    "body" : "blue-gray-100",
+    "description" : "blue-gray-100",
+    "scope" : ""
+  },
+  "blue-gray-200" : {
+    "prefix" : "mp-blue-gray-200",
+    "body" : "blue-gray-200",
+    "description" : "blue-gray-200",
+    "scope" : ""
+  },
+  "blue-gray-300" : {
+    "prefix" : "mp-blue-gray-300",
+    "body" : "blue-gray-300",
+    "description" : "blue-gray-300",
+    "scope" : ""
+  },
+  "blue-gray-400" : {
+    "prefix" : "mp-blue-gray-400",
+    "body" : "blue-gray-400",
+    "description" : "blue-gray-400",
+    "scope" : ""
+  },
+  "blue-gray-500" : {
+    "prefix" : "mp-blue-gray-500",
+    "body" : "blue-gray-500",
+    "description" : "blue-gray-500",
+    "scope" : ""
+  },
+  "blue-gray-600" : {
+    "prefix" : "mp-blue-gray-600",
+    "body" : "blue-gray-600",
+    "description" : "blue-gray-600",
+    "scope" : ""
+  },
+  "blue-gray-700" : {
+    "prefix" : "mp-blue-gray-700",
+    "body" : "blue-gray-700",
+    "description" : "blue-gray-700",
+    "scope" : ""
+  },
+  "blue-gray-800" : {
+    "prefix" : "mp-blue-gray-800",
+    "body" : "blue-gray-800",
+    "description" : "blue-gray-800",
+    "scope" : ""
+  },
+  "blue-gray-900" : {
+    "prefix" : "mp-blue-gray-900",
+    "body" : "blue-gray-900",
+    "description" : "blue-gray-900",
+    "scope" : ""
+  },
+  "brown-50" : {
+    "prefix" : "mp-brown-50",
+    "body" : "brown-50",
+    "description" : "brown-50",
+    "scope" : ""
+  },
+  "brown-100" : {
+    "prefix" : "mp-brown-100",
+    "body" : "brown-100",
+    "description" : "brown-100",
+    "scope" : ""
+  },
+  "brown-200" : {
+    "prefix" : "mp-brown-200",
+    "body" : "brown-200",
+    "description" : "brown-200",
+    "scope" : ""
+  },
+  "brown-300" : {
+    "prefix" : "mp-brown-300",
+    "body" : "brown-300",
+    "description" : "brown-300",
+    "scope" : ""
+  },
+  "brown-400" : {
+    "prefix" : "mp-brown-400",
+    "body" : "brown-400",
+    "description" : "brown-400",
+    "scope" : ""
+  },
+  "brown-500" : {
+    "prefix" : "mp-brown-500",
+    "body" : "brown-500",
+    "description" : "brown-500",
+    "scope" : ""
+  },
+  "brown-600" : {
+    "prefix" : "mp-brown-600",
+    "body" : "brown-600",
+    "description" : "brown-600",
+    "scope" : ""
+  },
+  "brown-700" : {
+    "prefix" : "mp-brown-700",
+    "body" : "brown-700",
+    "description" : "brown-700",
+    "scope" : ""
+  },
+  "brown-800" : {
+    "prefix" : "mp-brown-800",
+    "body" : "brown-800",
+    "description" : "brown-800",
+    "scope" : ""
+  },
+  "brown-900" : {
+    "prefix" : "mp-brown-900",
+    "body" : "brown-900",
+    "description" : "brown-900",
+    "scope" : ""
+  },
+  "cyan-50" : {
+    "prefix" : "mp-cyan-50",
+    "body" : "cyan-50",
+    "description" : "cyan-50",
+    "scope" : ""
+  },
+  "cyan-100" : {
+    "prefix" : "mp-cyan-100",
+    "body" : "cyan-100",
+    "description" : "cyan-100",
+    "scope" : ""
+  },
+  "cyan-200" : {
+    "prefix" : "mp-cyan-200",
+    "body" : "cyan-200",
+    "description" : "cyan-200",
+    "scope" : ""
+  },
+  "cyan-300" : {
+    "prefix" : "mp-cyan-300",
+    "body" : "cyan-300",
+    "description" : "cyan-300",
+    "scope" : ""
+  },
+  "cyan-400" : {
+    "prefix" : "mp-cyan-400",
+    "body" : "cyan-400",
+    "description" : "cyan-400",
+    "scope" : ""
+  },
+  "cyan-500" : {
+    "prefix" : "mp-cyan-500",
+    "body" : "cyan-500",
+    "description" : "cyan-500",
+    "scope" : ""
+  },
+  "cyan-600" : {
+    "prefix" : "mp-cyan-600",
+    "body" : "cyan-600",
+    "description" : "cyan-600",
+    "scope" : ""
+  },
+  "cyan-700" : {
+    "prefix" : "mp-cyan-700",
+    "body" : "cyan-700",
+    "description" : "cyan-700",
+    "scope" : ""
+  },
+  "cyan-800" : {
+    "prefix" : "mp-cyan-800",
+    "body" : "cyan-800",
+    "description" : "cyan-800",
+    "scope" : ""
+  },
+  "cyan-900" : {
+    "prefix" : "mp-cyan-900",
+    "body" : "cyan-900",
+    "description" : "cyan-900",
+    "scope" : ""
+  },
+  "cyan-A100" : {
+    "prefix" : "mp-cyan-A100",
+    "body" : "cyan-A100",
+    "description" : "cyan-A100",
+    "scope" : ""
+  },
+  "cyan-A200" : {
+    "prefix" : "mp-cyan-A200",
+    "body" : "cyan-A200",
+    "description" : "cyan-A200",
+    "scope" : ""
+  },
+  "cyan-A400" : {
+    "prefix" : "mp-cyan-A400",
+    "body" : "cyan-A400",
+    "description" : "cyan-A400",
+    "scope" : ""
+  },
+  "cyan-A700" : {
+    "prefix" : "mp-cyan-A700",
+    "body" : "cyan-A700",
+    "description" : "cyan-A700",
+    "scope" : ""
+  },
+  "deep-orange-50" : {
+    "prefix" : "mp-deep-orange-50",
+    "body" : "deep-orange-50",
+    "description" : "deep-orange-50",
+    "scope" : ""
+  },
+  "deep-orange-100" : {
+    "prefix" : "mp-deep-orange-100",
+    "body" : "deep-orange-100",
+    "description" : "deep-orange-100",
+    "scope" : ""
+  },
+  "deep-orange-200" : {
+    "prefix" : "mp-deep-orange-200",
+    "body" : "deep-orange-200",
+    "description" : "deep-orange-200",
+    "scope" : ""
+  },
+  "deep-orange-300" : {
+    "prefix" : "mp-deep-orange-300",
+    "body" : "deep-orange-300",
+    "description" : "deep-orange-300",
+    "scope" : ""
+  },
+  "deep-orange-400" : {
+    "prefix" : "mp-deep-orange-400",
+    "body" : "deep-orange-400",
+    "description" : "deep-orange-400",
+    "scope" : ""
+  },
+  "deep-orange-500" : {
+    "prefix" : "mp-deep-orange-500",
+    "body" : "deep-orange-500",
+    "description" : "deep-orange-500",
+    "scope" : ""
+  },
+  "deep-orange-600" : {
+    "prefix" : "mp-deep-orange-600",
+    "body" : "deep-orange-600",
+    "description" : "deep-orange-600",
+    "scope" : ""
+  },
+  "deep-orange-700" : {
+    "prefix" : "mp-deep-orange-700",
+    "body" : "deep-orange-700",
+    "description" : "deep-orange-700",
+    "scope" : ""
+  },
+  "deep-orange-800" : {
+    "prefix" : "mp-deep-orange-800",
+    "body" : "deep-orange-800",
+    "description" : "deep-orange-800",
+    "scope" : ""
+  },
+  "deep-orange-900" : {
+    "prefix" : "mp-deep-orange-900",
+    "body" : "deep-orange-900",
+    "description" : "deep-orange-900",
+    "scope" : ""
+  },
+  "deep-orange-A100" : {
+    "prefix" : "mp-deep-orange-A100",
+    "body" : "deep-orange-A100",
+    "description" : "deep-orange-A100",
+    "scope" : ""
+  },
+  "deep-orange-A200" : {
+    "prefix" : "mp-deep-orange-A200",
+    "body" : "deep-orange-A200",
+    "description" : "deep-orange-A200",
+    "scope" : ""
+  },
+  "deep-orange-A400" : {
+    "prefix" : "mp-deep-orange-A400",
+    "body" : "deep-orange-A400",
+    "description" : "deep-orange-A400",
+    "scope" : ""
+  },
+  "deep-orange-A700" : {
+    "prefix" : "mp-deep-orange-A700",
+    "body" : "deep-orange-A700",
+    "description" : "deep-orange-A700",
+    "scope" : ""
+  },
+  "deep-purple-50" : {
+    "prefix" : "mp-deep-purple-50",
+    "body" : "deep-purple-50",
+    "description" : "deep-purple-50",
+    "scope" : ""
+  },
+  "deep-purple-100" : {
+    "prefix" : "mp-deep-purple-100",
+    "body" : "deep-purple-100",
+    "description" : "deep-purple-100",
+    "scope" : ""
+  },
+  "deep-purple-200" : {
+    "prefix" : "mp-deep-purple-200",
+    "body" : "deep-purple-200",
+    "description" : "deep-purple-200",
+    "scope" : ""
+  },
+  "deep-purple-300" : {
+    "prefix" : "mp-deep-purple-300",
+    "body" : "deep-purple-300",
+    "description" : "deep-purple-300",
+    "scope" : ""
+  },
+  "deep-purple-400" : {
+    "prefix" : "mp-deep-purple-400",
+    "body" : "deep-purple-400",
+    "description" : "deep-purple-400",
+    "scope" : ""
+  },
+  "deep-purple-500" : {
+    "prefix" : "mp-deep-purple-500",
+    "body" : "deep-purple-500",
+    "description" : "deep-purple-500",
+    "scope" : ""
+  },
+  "deep-purple-600" : {
+    "prefix" : "mp-deep-purple-600",
+    "body" : "deep-purple-600",
+    "description" : "deep-purple-600",
+    "scope" : ""
+  },
+  "deep-purple-700" : {
+    "prefix" : "mp-deep-purple-700",
+    "body" : "deep-purple-700",
+    "description" : "deep-purple-700",
+    "scope" : ""
+  },
+  "deep-purple-800" : {
+    "prefix" : "mp-deep-purple-800",
+    "body" : "deep-purple-800",
+    "description" : "deep-purple-800",
+    "scope" : ""
+  },
+  "deep-purple-900" : {
+    "prefix" : "mp-deep-purple-900",
+    "body" : "deep-purple-900",
+    "description" : "deep-purple-900",
+    "scope" : ""
+  },
+  "deep-purple-A100" : {
+    "prefix" : "mp-deep-purple-A100",
+    "body" : "deep-purple-A100",
+    "description" : "deep-purple-A100",
+    "scope" : ""
+  },
+  "deep-purple-A200" : {
+    "prefix" : "mp-deep-purple-A200",
+    "body" : "deep-purple-A200",
+    "description" : "deep-purple-A200",
+    "scope" : ""
+  },
+  "deep-purple-A400" : {
+    "prefix" : "mp-deep-purple-A400",
+    "body" : "deep-purple-A400",
+    "description" : "deep-purple-A400",
+    "scope" : ""
+  },
+  "deep-purple-A700" : {
+    "prefix" : "mp-deep-purple-A700",
+    "body" : "deep-purple-A700",
+    "description" : "deep-purple-A700",
+    "scope" : ""
+  },
+  "gray-50" : {
+    "prefix" : "mp-gray-50",
+    "body" : "gray-50",
+    "description" : "gray-50",
+    "scope" : ""
+  },
+  "gray-100" : {
+    "prefix" : "mp-gray-100",
+    "body" : "gray-100",
+    "description" : "gray-100",
+    "scope" : ""
+  },
+  "gray-200" : {
+    "prefix" : "mp-gray-200",
+    "body" : "gray-200",
+    "description" : "gray-200",
+    "scope" : ""
+  },
+  "gray-300" : {
+    "prefix" : "mp-gray-300",
+    "body" : "gray-300",
+    "description" : "gray-300",
+    "scope" : ""
+  },
+  "gray-400" : {
+    "prefix" : "mp-gray-400",
+    "body" : "gray-400",
+    "description" : "gray-400",
+    "scope" : ""
+  },
+  "gray-500" : {
+    "prefix" : "mp-gray-500",
+    "body" : "gray-500",
+    "description" : "gray-500",
+    "scope" : ""
+  },
+  "gray-600" : {
+    "prefix" : "mp-gray-600",
+    "body" : "gray-600",
+    "description" : "gray-600",
+    "scope" : ""
+  },
+  "gray-700" : {
+    "prefix" : "mp-gray-700",
+    "body" : "gray-700",
+    "description" : "gray-700",
+    "scope" : ""
+  },
+  "gray-800" : {
+    "prefix" : "mp-gray-800",
+    "body" : "gray-800",
+    "description" : "gray-800",
+    "scope" : ""
+  },
+  "gray-900" : {
+    "prefix" : "mp-gray-900",
+    "body" : "gray-900",
+    "description" : "gray-900",
+    "scope" : ""
+  },
+  "green-50" : {
+    "prefix" : "mp-green-50",
+    "body" : "green-50",
+    "description" : "green-50",
+    "scope" : ""
+  },
+  "green-100" : {
+    "prefix" : "mp-green-100",
+    "body" : "green-100",
+    "description" : "green-100",
+    "scope" : ""
+  },
+  "green-200" : {
+    "prefix" : "mp-green-200",
+    "body" : "green-200",
+    "description" : "green-200",
+    "scope" : ""
+  },
+  "green-300" : {
+    "prefix" : "mp-green-300",
+    "body" : "green-300",
+    "description" : "green-300",
+    "scope" : ""
+  },
+  "green-400" : {
+    "prefix" : "mp-green-400",
+    "body" : "green-400",
+    "description" : "green-400",
+    "scope" : ""
+  },
+  "green-500" : {
+    "prefix" : "mp-green-500",
+    "body" : "green-500",
+    "description" : "green-500",
+    "scope" : ""
+  },
+  "green-600" : {
+    "prefix" : "mp-green-600",
+    "body" : "green-600",
+    "description" : "green-600",
+    "scope" : ""
+  },
+  "green-700" : {
+    "prefix" : "mp-green-700",
+    "body" : "green-700",
+    "description" : "green-700",
+    "scope" : ""
+  },
+  "green-800" : {
+    "prefix" : "mp-green-800",
+    "body" : "green-800",
+    "description" : "green-800",
+    "scope" : ""
+  },
+  "green-900" : {
+    "prefix" : "mp-green-900",
+    "body" : "green-900",
+    "description" : "green-900",
+    "scope" : ""
+  },
+  "green-A100" : {
+    "prefix" : "mp-green-A100",
+    "body" : "green-A100",
+    "description" : "green-A100",
+    "scope" : ""
+  },
+  "green-A200" : {
+    "prefix" : "mp-green-A200",
+    "body" : "green-A200",
+    "description" : "green-A200",
+    "scope" : ""
+  },
+  "green-A400" : {
+    "prefix" : "mp-green-A400",
+    "body" : "green-A400",
+    "description" : "green-A400",
+    "scope" : ""
+  },
+  "green-A700" : {
+    "prefix" : "mp-green-A700",
+    "body" : "green-A700",
+    "description" : "green-A700",
+    "scope" : ""
+  },
+  "indigo-50" : {
+    "prefix" : "mp-indigo-50",
+    "body" : "indigo-50",
+    "description" : "indigo-50",
+    "scope" : ""
+  },
+  "indigo-100" : {
+    "prefix" : "mp-indigo-100",
+    "body" : "indigo-100",
+    "description" : "indigo-100",
+    "scope" : ""
+  },
+  "indigo-200" : {
+    "prefix" : "mp-indigo-200",
+    "body" : "indigo-200",
+    "description" : "indigo-200",
+    "scope" : ""
+  },
+  "indigo-300" : {
+    "prefix" : "mp-indigo-300",
+    "body" : "indigo-300",
+    "description" : "indigo-300",
+    "scope" : ""
+  },
+  "indigo-400" : {
+    "prefix" : "mp-indigo-400",
+    "body" : "indigo-400",
+    "description" : "indigo-400",
+    "scope" : ""
+  },
+  "indigo-500" : {
+    "prefix" : "mp-indigo-500",
+    "body" : "indigo-500",
+    "description" : "indigo-500",
+    "scope" : ""
+  },
+  "indigo-600" : {
+    "prefix" : "mp-indigo-600",
+    "body" : "indigo-600",
+    "description" : "indigo-600",
+    "scope" : ""
+  },
+  "indigo-700" : {
+    "prefix" : "mp-indigo-700",
+    "body" : "indigo-700",
+    "description" : "indigo-700",
+    "scope" : ""
+  },
+  "indigo-800" : {
+    "prefix" : "mp-indigo-800",
+    "body" : "indigo-800",
+    "description" : "indigo-800",
+    "scope" : ""
+  },
+  "indigo-900" : {
+    "prefix" : "mp-indigo-900",
+    "body" : "indigo-900",
+    "description" : "indigo-900",
+    "scope" : ""
+  },
+  "indigo-A100" : {
+    "prefix" : "mp-indigo-A100",
+    "body" : "indigo-A100",
+    "description" : "indigo-A100",
+    "scope" : ""
+  },
+  "indigo-A200" : {
+    "prefix" : "mp-indigo-A200",
+    "body" : "indigo-A200",
+    "description" : "indigo-A200",
+    "scope" : ""
+  },
+  "indigo-A400" : {
+    "prefix" : "mp-indigo-A400",
+    "body" : "indigo-A400",
+    "description" : "indigo-A400",
+    "scope" : ""
+  },
+  "indigo-A700" : {
+    "prefix" : "mp-indigo-A700",
+    "body" : "indigo-A700",
+    "description" : "indigo-A700",
+    "scope" : ""
+  },
+  "light-blue-50" : {
+    "prefix" : "mp-light-blue-50",
+    "body" : "light-blue-50",
+    "description" : "light-blue-50",
+    "scope" : ""
+  },
+  "light-blue-100" : {
+    "prefix" : "mp-light-blue-100",
+    "body" : "light-blue-100",
+    "description" : "light-blue-100",
+    "scope" : ""
+  },
+  "light-blue-200" : {
+    "prefix" : "mp-light-blue-200",
+    "body" : "light-blue-200",
+    "description" : "light-blue-200",
+    "scope" : ""
+  },
+  "light-blue-300" : {
+    "prefix" : "mp-light-blue-300",
+    "body" : "light-blue-300",
+    "description" : "light-blue-300",
+    "scope" : ""
+  },
+  "light-blue-400" : {
+    "prefix" : "mp-light-blue-400",
+    "body" : "light-blue-400",
+    "description" : "light-blue-400",
+    "scope" : ""
+  },
+  "light-blue-500" : {
+    "prefix" : "mp-light-blue-500",
+    "body" : "light-blue-500",
+    "description" : "light-blue-500",
+    "scope" : ""
+  },
+  "light-blue-600" : {
+    "prefix" : "mp-light-blue-600",
+    "body" : "light-blue-600",
+    "description" : "light-blue-600",
+    "scope" : ""
+  },
+  "light-blue-700" : {
+    "prefix" : "mp-light-blue-700",
+    "body" : "light-blue-700",
+    "description" : "light-blue-700",
+    "scope" : ""
+  },
+  "light-blue-800" : {
+    "prefix" : "mp-light-blue-800",
+    "body" : "light-blue-800",
+    "description" : "light-blue-800",
+    "scope" : ""
+  },
+  "light-blue-900" : {
+    "prefix" : "mp-light-blue-900",
+    "body" : "light-blue-900",
+    "description" : "light-blue-900",
+    "scope" : ""
+  },
+  "light-blue-A100" : {
+    "prefix" : "mp-light-blue-A100",
+    "body" : "light-blue-A100",
+    "description" : "light-blue-A100",
+    "scope" : ""
+  },
+  "light-blue-A200" : {
+    "prefix" : "mp-light-blue-A200",
+    "body" : "light-blue-A200",
+    "description" : "light-blue-A200",
+    "scope" : ""
+  },
+  "light-blue-A400" : {
+    "prefix" : "mp-light-blue-A400",
+    "body" : "light-blue-A400",
+    "description" : "light-blue-A400",
+    "scope" : ""
+  },
+  "light-blue-A700" : {
+    "prefix" : "mp-light-blue-A700",
+    "body" : "light-blue-A700",
+    "description" : "light-blue-A700",
+    "scope" : ""
+  },
+  "light-green-50" : {
+    "prefix" : "mp-light-green-50",
+    "body" : "light-green-50",
+    "description" : "light-green-50",
+    "scope" : ""
+  },
+  "light-green-100" : {
+    "prefix" : "mp-light-green-100",
+    "body" : "light-green-100",
+    "description" : "light-green-100",
+    "scope" : ""
+  },
+  "light-green-200" : {
+    "prefix" : "mp-light-green-200",
+    "body" : "light-green-200",
+    "description" : "light-green-200",
+    "scope" : ""
+  },
+  "light-green-300" : {
+    "prefix" : "mp-light-green-300",
+    "body" : "light-green-300",
+    "description" : "light-green-300",
+    "scope" : ""
+  },
+  "light-green-400" : {
+    "prefix" : "mp-light-green-400",
+    "body" : "light-green-400",
+    "description" : "light-green-400",
+    "scope" : ""
+  },
+  "light-green-500" : {
+    "prefix" : "mp-light-green-500",
+    "body" : "light-green-500",
+    "description" : "light-green-500",
+    "scope" : ""
+  },
+  "light-green-600" : {
+    "prefix" : "mp-light-green-600",
+    "body" : "light-green-600",
+    "description" : "light-green-600",
+    "scope" : ""
+  },
+  "light-green-700" : {
+    "prefix" : "mp-light-green-700",
+    "body" : "light-green-700",
+    "description" : "light-green-700",
+    "scope" : ""
+  },
+  "light-green-800" : {
+    "prefix" : "mp-light-green-800",
+    "body" : "light-green-800",
+    "description" : "light-green-800",
+    "scope" : ""
+  },
+  "light-green-900" : {
+    "prefix" : "mp-light-green-900",
+    "body" : "light-green-900",
+    "description" : "light-green-900",
+    "scope" : ""
+  },
+  "light-green-A100" : {
+    "prefix" : "mp-light-green-A100",
+    "body" : "light-green-A100",
+    "description" : "light-green-A100",
+    "scope" : ""
+  },
+  "light-green-A200" : {
+    "prefix" : "mp-light-green-A200",
+    "body" : "light-green-A200",
+    "description" : "light-green-A200",
+    "scope" : ""
+  },
+  "light-green-A400" : {
+    "prefix" : "mp-light-green-A400",
+    "body" : "light-green-A400",
+    "description" : "light-green-A400",
+    "scope" : ""
+  },
+  "light-green-A700" : {
+    "prefix" : "mp-light-green-A700",
+    "body" : "light-green-A700",
+    "description" : "light-green-A700",
+    "scope" : ""
+  },
+  "lime-50" : {
+    "prefix" : "mp-lime-50",
+    "body" : "lime-50",
+    "description" : "lime-50",
+    "scope" : ""
+  },
+  "lime-100" : {
+    "prefix" : "mp-lime-100",
+    "body" : "lime-100",
+    "description" : "lime-100",
+    "scope" : ""
+  },
+  "lime-200" : {
+    "prefix" : "mp-lime-200",
+    "body" : "lime-200",
+    "description" : "lime-200",
+    "scope" : ""
+  },
+  "lime-300" : {
+    "prefix" : "mp-lime-300",
+    "body" : "lime-300",
+    "description" : "lime-300",
+    "scope" : ""
+  },
+  "lime-400" : {
+    "prefix" : "mp-lime-400",
+    "body" : "lime-400",
+    "description" : "lime-400",
+    "scope" : ""
+  },
+  "lime-500" : {
+    "prefix" : "mp-lime-500",
+    "body" : "lime-500",
+    "description" : "lime-500",
+    "scope" : ""
+  },
+  "lime-600" : {
+    "prefix" : "mp-lime-600",
+    "body" : "lime-600",
+    "description" : "lime-600",
+    "scope" : ""
+  },
+  "lime-700" : {
+    "prefix" : "mp-lime-700",
+    "body" : "lime-700",
+    "description" : "lime-700",
+    "scope" : ""
+  },
+  "lime-800" : {
+    "prefix" : "mp-lime-800",
+    "body" : "lime-800",
+    "description" : "lime-800",
+    "scope" : ""
+  },
+  "lime-900" : {
+    "prefix" : "mp-lime-900",
+    "body" : "lime-900",
+    "description" : "lime-900",
+    "scope" : ""
+  },
+  "lime-A100" : {
+    "prefix" : "mp-lime-A100",
+    "body" : "lime-A100",
+    "description" : "lime-A100",
+    "scope" : ""
+  },
+  "lime-A200" : {
+    "prefix" : "mp-lime-A200",
+    "body" : "lime-A200",
+    "description" : "lime-A200",
+    "scope" : ""
+  },
+  "lime-A400" : {
+    "prefix" : "mp-lime-A400",
+    "body" : "lime-A400",
+    "description" : "lime-A400",
+    "scope" : ""
+  },
+  "lime-A700" : {
+    "prefix" : "mp-lime-A700",
+    "body" : "lime-A700",
+    "description" : "lime-A700",
+    "scope" : ""
+  },
+  "orange-50" : {
+    "prefix" : "mp-orange-50",
+    "body" : "orange-50",
+    "description" : "orange-50",
+    "scope" : ""
+  },
+  "orange-100" : {
+    "prefix" : "mp-orange-100",
+    "body" : "orange-100",
+    "description" : "orange-100",
+    "scope" : ""
+  },
+  "orange-200" : {
+    "prefix" : "mp-orange-200",
+    "body" : "orange-200",
+    "description" : "orange-200",
+    "scope" : ""
+  },
+  "orange-300" : {
+    "prefix" : "mp-orange-300",
+    "body" : "orange-300",
+    "description" : "orange-300",
+    "scope" : ""
+  },
+  "orange-400" : {
+    "prefix" : "mp-orange-400",
+    "body" : "orange-400",
+    "description" : "orange-400",
+    "scope" : ""
+  },
+  "orange-500" : {
+    "prefix" : "mp-orange-500",
+    "body" : "orange-500",
+    "description" : "orange-500",
+    "scope" : ""
+  },
+  "orange-600" : {
+    "prefix" : "mp-orange-600",
+    "body" : "orange-600",
+    "description" : "orange-600",
+    "scope" : ""
+  },
+  "orange-700" : {
+    "prefix" : "mp-orange-700",
+    "body" : "orange-700",
+    "description" : "orange-700",
+    "scope" : ""
+  },
+  "orange-800" : {
+    "prefix" : "mp-orange-800",
+    "body" : "orange-800",
+    "description" : "orange-800",
+    "scope" : ""
+  },
+  "orange-900" : {
+    "prefix" : "mp-orange-900",
+    "body" : "orange-900",
+    "description" : "orange-900",
+    "scope" : ""
+  },
+  "orange-A100" : {
+    "prefix" : "mp-orange-A100",
+    "body" : "orange-A100",
+    "description" : "orange-A100",
+    "scope" : ""
+  },
+  "orange-A200" : {
+    "prefix" : "mp-orange-A200",
+    "body" : "orange-A200",
+    "description" : "orange-A200",
+    "scope" : ""
+  },
+  "orange-A400" : {
+    "prefix" : "mp-orange-A400",
+    "body" : "orange-A400",
+    "description" : "orange-A400",
+    "scope" : ""
+  },
+  "orange-A700" : {
+    "prefix" : "mp-orange-A700",
+    "body" : "orange-A700",
+    "description" : "orange-A700",
+    "scope" : ""
+  },
+  "pink-50" : {
+    "prefix" : "mp-pink-50",
+    "body" : "pink-50",
+    "description" : "pink-50",
+    "scope" : ""
+  },
+  "pink-100" : {
+    "prefix" : "mp-pink-100",
+    "body" : "pink-100",
+    "description" : "pink-100",
+    "scope" : ""
+  },
+  "pink-200" : {
+    "prefix" : "mp-pink-200",
+    "body" : "pink-200",
+    "description" : "pink-200",
+    "scope" : ""
+  },
+  "pink-300" : {
+    "prefix" : "mp-pink-300",
+    "body" : "pink-300",
+    "description" : "pink-300",
+    "scope" : ""
+  },
+  "pink-400" : {
+    "prefix" : "mp-pink-400",
+    "body" : "pink-400",
+    "description" : "pink-400",
+    "scope" : ""
+  },
+  "pink-500" : {
+    "prefix" : "mp-pink-500",
+    "body" : "pink-500",
+    "description" : "pink-500",
+    "scope" : ""
+  },
+  "pink-600" : {
+    "prefix" : "mp-pink-600",
+    "body" : "pink-600",
+    "description" : "pink-600",
+    "scope" : ""
+  },
+  "pink-700" : {
+    "prefix" : "mp-pink-700",
+    "body" : "pink-700",
+    "description" : "pink-700",
+    "scope" : ""
+  },
+  "pink-800" : {
+    "prefix" : "mp-pink-800",
+    "body" : "pink-800",
+    "description" : "pink-800",
+    "scope" : ""
+  },
+  "pink-900" : {
+    "prefix" : "mp-pink-900",
+    "body" : "pink-900",
+    "description" : "pink-900",
+    "scope" : ""
+  },
+  "pink-A100" : {
+    "prefix" : "mp-pink-A100",
+    "body" : "pink-A100",
+    "description" : "pink-A100",
+    "scope" : ""
+  },
+  "pink-A200" : {
+    "prefix" : "mp-pink-A200",
+    "body" : "pink-A200",
+    "description" : "pink-A200",
+    "scope" : ""
+  },
+  "pink-A400" : {
+    "prefix" : "mp-pink-A400",
+    "body" : "pink-A400",
+    "description" : "pink-A400",
+    "scope" : ""
+  },
+  "pink-A700" : {
+    "prefix" : "mp-pink-A700",
+    "body" : "pink-A700",
+    "description" : "pink-A700",
+    "scope" : ""
+  },
+  "purple-50" : {
+    "prefix" : "mp-purple-50",
+    "body" : "purple-50",
+    "description" : "purple-50",
+    "scope" : ""
+  },
+  "purple-100" : {
+    "prefix" : "mp-purple-100",
+    "body" : "purple-100",
+    "description" : "purple-100",
+    "scope" : ""
+  },
+  "purple-200" : {
+    "prefix" : "mp-purple-200",
+    "body" : "purple-200",
+    "description" : "purple-200",
+    "scope" : ""
+  },
+  "purple-300" : {
+    "prefix" : "mp-purple-300",
+    "body" : "purple-300",
+    "description" : "purple-300",
+    "scope" : ""
+  },
+  "purple-400" : {
+    "prefix" : "mp-purple-400",
+    "body" : "purple-400",
+    "description" : "purple-400",
+    "scope" : ""
+  },
+  "purple-500" : {
+    "prefix" : "mp-purple-500",
+    "body" : "purple-500",
+    "description" : "purple-500",
+    "scope" : ""
+  },
+  "purple-600" : {
+    "prefix" : "mp-purple-600",
+    "body" : "purple-600",
+    "description" : "purple-600",
+    "scope" : ""
+  },
+  "purple-700" : {
+    "prefix" : "mp-purple-700",
+    "body" : "purple-700",
+    "description" : "purple-700",
+    "scope" : ""
+  },
+  "purple-800" : {
+    "prefix" : "mp-purple-800",
+    "body" : "purple-800",
+    "description" : "purple-800",
+    "scope" : ""
+  },
+  "purple-900" : {
+    "prefix" : "mp-purple-900",
+    "body" : "purple-900",
+    "description" : "purple-900",
+    "scope" : ""
+  },
+  "purple-A100" : {
+    "prefix" : "mp-purple-A100",
+    "body" : "purple-A100",
+    "description" : "purple-A100",
+    "scope" : ""
+  },
+  "purple-A200" : {
+    "prefix" : "mp-purple-A200",
+    "body" : "purple-A200",
+    "description" : "purple-A200",
+    "scope" : ""
+  },
+  "purple-A400" : {
+    "prefix" : "mp-purple-A400",
+    "body" : "purple-A400",
+    "description" : "purple-A400",
+    "scope" : ""
+  },
+  "purple-A700" : {
+    "prefix" : "mp-purple-A700",
+    "body" : "purple-A700",
+    "description" : "purple-A700",
+    "scope" : ""
+  },
+  "red-50" : {
+    "prefix" : "mp-red-50",
+    "body" : "red-50",
+    "description" : "red-50",
+    "scope" : ""
+  },
+  "red-100" : {
+    "prefix" : "mp-red-100",
+    "body" : "red-100",
+    "description" : "red-100",
+    "scope" : ""
+  },
+  "red-200" : {
+    "prefix" : "mp-red-200",
+    "body" : "red-200",
+    "description" : "red-200",
+    "scope" : ""
+  },
+  "red-300" : {
+    "prefix" : "mp-red-300",
+    "body" : "red-300",
+    "description" : "red-300",
+    "scope" : ""
+  },
+  "red-400" : {
+    "prefix" : "mp-red-400",
+    "body" : "red-400",
+    "description" : "red-400",
+    "scope" : ""
+  },
+  "red-500" : {
+    "prefix" : "mp-red-500",
+    "body" : "red-500",
+    "description" : "red-500",
+    "scope" : ""
+  },
+  "red-600" : {
+    "prefix" : "mp-red-600",
+    "body" : "red-600",
+    "description" : "red-600",
+    "scope" : ""
+  },
+  "red-700" : {
+    "prefix" : "mp-red-700",
+    "body" : "red-700",
+    "description" : "red-700",
+    "scope" : ""
+  },
+  "red-800" : {
+    "prefix" : "mp-red-800",
+    "body" : "red-800",
+    "description" : "red-800",
+    "scope" : ""
+  },
+  "red-900" : {
+    "prefix" : "mp-red-900",
+    "body" : "red-900",
+    "description" : "red-900",
+    "scope" : ""
+  },
+  "red-A100" : {
+    "prefix" : "mp-red-A100",
+    "body" : "red-A100",
+    "description" : "red-A100",
+    "scope" : ""
+  },
+  "red-A200" : {
+    "prefix" : "mp-red-A200",
+    "body" : "red-A200",
+    "description" : "red-A200",
+    "scope" : ""
+  },
+  "red-A400" : {
+    "prefix" : "mp-red-A400",
+    "body" : "red-A400",
+    "description" : "red-A400",
+    "scope" : ""
+  },
+  "red-A700" : {
+    "prefix" : "mp-red-A700",
+    "body" : "red-A700",
+    "description" : "red-A700",
+    "scope" : ""
+  },
+  "teal-50" : {
+    "prefix" : "mp-teal-50",
+    "body" : "teal-50",
+    "description" : "teal-50",
+    "scope" : ""
+  },
+  "teal-100" : {
+    "prefix" : "mp-teal-100",
+    "body" : "teal-100",
+    "description" : "teal-100",
+    "scope" : ""
+  },
+  "teal-200" : {
+    "prefix" : "mp-teal-200",
+    "body" : "teal-200",
+    "description" : "teal-200",
+    "scope" : ""
+  },
+  "teal-300" : {
+    "prefix" : "mp-teal-300",
+    "body" : "teal-300",
+    "description" : "teal-300",
+    "scope" : ""
+  },
+  "teal-400" : {
+    "prefix" : "mp-teal-400",
+    "body" : "teal-400",
+    "description" : "teal-400",
+    "scope" : ""
+  },
+  "teal-500" : {
+    "prefix" : "mp-teal-500",
+    "body" : "teal-500",
+    "description" : "teal-500",
+    "scope" : ""
+  },
+  "teal-600" : {
+    "prefix" : "mp-teal-600",
+    "body" : "teal-600",
+    "description" : "teal-600",
+    "scope" : ""
+  },
+  "teal-700" : {
+    "prefix" : "mp-teal-700",
+    "body" : "teal-700",
+    "description" : "teal-700",
+    "scope" : ""
+  },
+  "teal-800" : {
+    "prefix" : "mp-teal-800",
+    "body" : "teal-800",
+    "description" : "teal-800",
+    "scope" : ""
+  },
+  "teal-900" : {
+    "prefix" : "mp-teal-900",
+    "body" : "teal-900",
+    "description" : "teal-900",
+    "scope" : ""
+  },
+  "teal-A100" : {
+    "prefix" : "mp-teal-A100",
+    "body" : "teal-A100",
+    "description" : "teal-A100",
+    "scope" : ""
+  },
+  "teal-A200" : {
+    "prefix" : "mp-teal-A200",
+    "body" : "teal-A200",
+    "description" : "teal-A200",
+    "scope" : ""
+  },
+  "teal-A400" : {
+    "prefix" : "mp-teal-A400",
+    "body" : "teal-A400",
+    "description" : "teal-A400",
+    "scope" : ""
+  },
+  "teal-A700" : {
+    "prefix" : "mp-teal-A700",
+    "body" : "teal-A700",
+    "description" : "teal-A700",
+    "scope" : ""
+  },
+  "white" : {
+    "prefix" : "mp-white",
+    "body" : "white",
+    "description" : "white",
+    "scope" : ""
+  },
+  "yellow-50" : {
+    "prefix" : "mp-yellow-50",
+    "body" : "yellow-50",
+    "description" : "yellow-50",
+    "scope" : ""
+  },
+  "yellow-100" : {
+    "prefix" : "mp-yellow-100",
+    "body" : "yellow-100",
+    "description" : "yellow-100",
+    "scope" : ""
+  },
+  "yellow-200" : {
+    "prefix" : "mp-yellow-200",
+    "body" : "yellow-200",
+    "description" : "yellow-200",
+    "scope" : ""
+  },
+  "yellow-300" : {
+    "prefix" : "mp-yellow-300",
+    "body" : "yellow-300",
+    "description" : "yellow-300",
+    "scope" : ""
+  },
+  "yellow-400" : {
+    "prefix" : "mp-yellow-400",
+    "body" : "yellow-400",
+    "description" : "yellow-400",
+    "scope" : ""
+  },
+  "yellow-500" : {
+    "prefix" : "mp-yellow-500",
+    "body" : "yellow-500",
+    "description" : "yellow-500",
+    "scope" : ""
+  },
+  "yellow-600" : {
+    "prefix" : "mp-yellow-600",
+    "body" : "yellow-600",
+    "description" : "yellow-600",
+    "scope" : ""
+  },
+  "yellow-700" : {
+    "prefix" : "mp-yellow-700",
+    "body" : "yellow-700",
+    "description" : "yellow-700",
+    "scope" : ""
+  },
+  "yellow-800" : {
+    "prefix" : "mp-yellow-800",
+    "body" : "yellow-800",
+    "description" : "yellow-800",
+    "scope" : ""
+  },
+  "yellow-900" : {
+    "prefix" : "mp-yellow-900",
+    "body" : "yellow-900",
+    "description" : "yellow-900",
+    "scope" : ""
+  },
+  "yellow-A100" : {
+    "prefix" : "mp-yellow-A100",
+    "body" : "yellow-A100",
+    "description" : "yellow-A100",
+    "scope" : ""
+  },
+  "yellow-A200" : {
+    "prefix" : "mp-yellow-A200",
+    "body" : "yellow-A200",
+    "description" : "yellow-A200",
+    "scope" : ""
+  },
+  "yellow-A400" : {
+    "prefix" : "mp-yellow-A400",
+    "body" : "yellow-A400",
+    "description" : "yellow-A400",
+    "scope" : ""
+  },
+  "yellow-A700" : {
+    "prefix" : "mp-yellow-A700",
+    "body" : "yellow-A700",
+    "description" : "yellow-A700",
     "scope" : ""
   }
 }

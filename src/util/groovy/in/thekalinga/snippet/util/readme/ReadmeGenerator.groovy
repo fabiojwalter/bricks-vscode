@@ -116,6 +116,16 @@ class ReadmeGenerator {
             builder << "|${iconStr}|\n"
         })
 
+         // Handle Material Color Pallete
+        builder << "\n"
+        builder << "### Material Design Color Pallete\n\n"
+        builder << "|Color Name|\n"
+        builder << "|---|\n"
+        ObjectMapper mapperColor = new ObjectMapper()
+        def colorCode = mapperColor.readValue(getClass().getResourceAsStream('/material-colors.json'), Icons.class)
+        colorCode.icons.forEach({ iconStr ->
+            builder << "|${iconStr}|\n"
+        })
 
 
         StringWriter readmeTemplate = new StringWriter()

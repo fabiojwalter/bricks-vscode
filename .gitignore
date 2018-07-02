@@ -1,6 +1,8 @@
 build/
 .gradle/
 .idea/
+.vscode/
+.settings/
 target/
 bin/
 .project
@@ -14,3 +16,4 @@ bin/
 *.*~
 *.log
 launch.json
+snippets.json

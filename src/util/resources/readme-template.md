@@ -24,6 +24,8 @@ To use Material Icons snippets, source file, and start typing `mi-`, the editor 
 
 To use Material Design Community Icons snippets, open source file, and start typing `mc-`, the editor will show you all the snippets
 
+To use Material Design color codes, open source file, and start typing `mp-`, the editor will show you all the snippets
+
 The detailed list of supported actions are listed below under documentation section
 
 ## Contribution guidelines

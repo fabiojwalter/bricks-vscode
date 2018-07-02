@@ -1,24 +1,22 @@
 import React, {PureComponent} from 'react';
 /**
-* @author ${1:author} <${author}@wssim.com.br>
-* @since $2
+* @author ${1:Author} <${2:Email}@wssim.com.br>
+* @since $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE
 */
-class ${3:Class} extends PureComponent {
+export default class ${3:${TM_FILENAME/(.*)\..+$/$1/}} extends PureComponent {
 
     static propTypes = {
-        $4
+        $5
     }
 
     static defaultProps = {
-        $5
+        $6
     }
 
     render() {
         return (
-            $END$
+            $7
         );
     }
 
 }
-
-export default ${Class};

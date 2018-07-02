@@ -1,1 +1,1 @@
-<Bx.Badge color="${1:light-blue|red}">$2</Bx.Badge>
+<Bx.Badge color="${1|one,two,three|}">$2</Bx.Badge>

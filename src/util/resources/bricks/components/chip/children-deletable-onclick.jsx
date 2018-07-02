@@ -1,11 +1,11 @@
 <Bx.Chip
-    contact-color="${1:red|teal|deep-purple}"
+    contact-color="${1:color}"
     deletable
     id="$2"
     label="$3"
     onClick={${4:handleClick}}
     onClickDeletable={${4:handleDelete}}>
     <Bx.Icon>
-        ${4:person|cloud}
+        ${4:icon}
     </Bx.Icon>
 </Bx.Chip>

@@ -1,8 +1,8 @@
-    <Bx.InputText
-        id="${1:text}"
-        label="${2:Label}"
+<Bx.InputText
+    id="$1"
+    label="$2"
 
-        onChange={this.handleOnChange}
-        required
-        type="text"
-        value="${3:Value}" />
+    onChange={this.handleOnChange}
+    required
+    type="text"
+    value={this.props.$3} />
