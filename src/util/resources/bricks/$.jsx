@@ -18,5 +18,4 @@ export default class ${3:${TM_FILENAME/(.*)\..+$/$1/}} extends PureComponent {
             $7
         );
     }
-
 }
